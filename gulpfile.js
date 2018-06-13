@@ -1,0 +1,74 @@
+const gulp = require('gulp');
+const del = require('del');
+const plumber = require('gulp-plumber');
+const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const notify = require('gulp-notify');
+const minfy = require('gulp-csso');
+const rename = require('gulp-rename');
+const svgstore = require('gulp-svgstore');
+const imagemin = require('gulp-imagemin');
+const browserSync = require('browser-sync');
+
+gulp.task('clean', function () {
+  return del('build');
+});
+
+gulp.task('styles', function () {
+  return gulp.src("source/styles/**/*.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .on('error', function () {
+      notify.onError()
+    })
+    .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest('build/css'))
+    .pipe(minfy())
+    .pipe(rename('style.min.css'))
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("images", function() {
+  return gulp.src("source/img/**/*.{png,jpg,gif}")
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true})
+  ]))
+  .pipe(gulp.dest("build/img"));
+});
+
+gulp.task('copy', function () {
+  return gulp.src([
+    "source/fonts/**/*.{woff, woff2}",
+    "source/*.html"
+  ])
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task('watch', function () {
+  gulp.watch("source/styles/**/*.scss", gulp.series('styles'));
+  gulp.watch("source/img/**/*.{png,jpg,gif}", gulp.series('images'));
+  gulp.watch("source/img/icon-*.svg", gulp.series('sprite'));
+  gulp.watch(["source/fonts/**/*.{woff, woff2}", "*.html"], gulp.series('copy'))
+});
+
+gulp.task("connect", function () {
+  browserSync.init({
+    server: {
+      baseDir: "./build"
+    }
+  });
+  browserSync.watch('build/**/*').on('change', browserSync.reload);
+});
+
+gulp.task("build", gulp.series("styles", "images", "sprite", "images", "copy"));
+gulp.task("serve", gulp.series("build", gulp.parallel("connect", "watch")));
