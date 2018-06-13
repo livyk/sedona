@@ -22,5 +22,15 @@
 }
 
 .main-nav__close-button {
-  @include reset-buttom-style
+  @include reset-buttom-style;
+  background: url("img/icon-cross.svg");
+}
+
+.main-nav__bar {
+  height: 56px;
+}
+
+.main-nav__logo {
+  display: block;
+  margin: 0 auto;
 }
