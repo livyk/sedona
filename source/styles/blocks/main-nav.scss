@@ -1,0 +1,22 @@
+@import "../mixins";
+@import "../variables";
+
+.main-nav__list {
+  @include reset-list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__list-item {
+  text-align: center;
+  background-color: $background-blue;
+}
+
+.main-nav__list-item-link {
+  color: white;
+  @include reset-link-style;
+}
+
+.main-nav__close-button {
+  @include reset-buttom-style
+}

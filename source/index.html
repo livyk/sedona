@@ -3,33 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona - Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav page-header__main-nav">
         <ul class="main-nav__list site-list">
-          <li class="menu__item site-list__item">
-            Главная
+          <li class="main-nav__list-item site-list__item">
+            <a class="main-nav__list-item-link" href="#">Главная</a>
             <button type="button" class="main-nav__close-button"></button>
           </li>
-          <li class="menu__item site-list__item">
-            <a href="#">Фото и видео</a>
+          <li class="main-nav__list-item site-list__item">
+            <a class="main-nav__list-item-link" href="#">Фото и видео</a>
           </li>
-          <li class="menu__item site-list__item">
-            <a href="#">Форма отзыва</a>
+          <li class="main-nav__list-item site-list__item">
+            <a class="main-nav__list-item-link" href="#">Форма отзыва</a>
           </li>
-          <li class="menu__item site-list__item">
-            <a href="#">Html academy</a>
+          <li class="main-nav__list-item site-list__item">
+            <a class="main-nav__list-item-link" href="#">Html academy</a>
           </li>
         </ul>
-        <div class="main-nav__row">
+        <div class="page-header">
           <img src="http://placehold.it/150x100"
           alt="City of Sedona"
           class="nav__logo">
           <button type="button">Открыть меню</button>
         </div>
       </nav>
-      <div class="preview">
+      <section class="preview page-header__preview">
         <div class="preview__subheader subheader">
           <span class="subheader_main">welcome</span>
           <span class="subheader__secondary">to the gorgeous</span>
@@ -38,7 +40,7 @@
         <blockquote class="preview__slogan">
           Because the Grand Canyon suck!
         </blockquote>
-      </div>
+      </section>
     </header>
 
     <main class="page-content">
