@@ -9,6 +9,7 @@ const rename = require('gulp-rename');
 const svgstore = require('gulp-svgstore');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync');
+const notify = require('gulp-notify');
 
 gulp.task('clean', function () {
   return del('build');
@@ -16,11 +17,13 @@ gulp.task('clean', function () {
 
 gulp.task('styles', function () {
   return gulp.src("source/styles/**/*.scss")
-    .pipe(plumber())
+    .pipe(plumber({errorHandler: notify.onError(function (err) {
+        return {
+          title: 'Styles',
+          message: err.message
+        }
+      })}))
     .pipe(sass())
-    // .on('error', function () {
-    //   notify.onError()
-    // })
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest('build/css'))
     .pipe(minfy())
