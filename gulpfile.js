@@ -4,7 +4,6 @@ const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const notify = require('gulp-notify');
 const minfy = require('gulp-csso');
 const rename = require('gulp-rename');
 const svgstore = require('gulp-svgstore');
@@ -19,9 +18,9 @@ gulp.task('styles', function () {
   return gulp.src("source/styles/**/*.scss")
     .pipe(plumber())
     .pipe(sass())
-    .on('error', function () {
-      notify.onError()
-    })
+    // .on('error', function () {
+    //   notify.onError()
+    // })
     .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest('build/css'))
     .pipe(minfy())

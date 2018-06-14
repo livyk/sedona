@@ -1,17 +1,17 @@
 .intro {
-  height: 390px;
-  background: url("/img/bg-back-mobile@1x.jpg") no-repeat scroll center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
+  height: 390px;
+  background: url("/img/bg-intro-triangle-mobile.svg") no-repeat center bottom,
+              url("/img/bg-back-mobile@1x.jpg") no-repeat scroll center;
+
 }
 
 .intro__text-sedona {
-  width: 280px;
-  margin: auto;
-}
-
-.intro__bg-triangle {
+  max-width: 280px;
   width: 100%;
+  height: auto;
 }
