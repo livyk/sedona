@@ -1,0 +1,30 @@
+.page-footer {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__hashtag {
+  margin: 0;
+  display: block;
+  color: black;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-footer__created-by {
+  color: black;
+  text-transform: uppercase;
+}
+
+.page-footer__created-by-icon {
+  position: relative;
+  top: 14px;
+}
+
+.page-footer__social {
+  margin: 40px 0;
+}

@@ -2,11 +2,13 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 button {
   background: none;
   border: none;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 a {
@@ -14,9 +16,11 @@ a {
   &:visited {
     text-decoration: none;
   }
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 body, html {
   margin: 0;
   padding: 0;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }

@@ -1,0 +1,13 @@
+@import "../variables";
+.base-button {
+  display: block;
+  padding: 15px 0;
+  width: 100%;
+  background-color: $mobile-menu-background-color;
+  color: white;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
