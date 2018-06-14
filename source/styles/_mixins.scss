@@ -1,17 +1,1 @@
-@mixin reset-list-style {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
-@mixin reset-buttom-style {
-  background: none;
-  border: none;
-}
-
-@mixin reset-link-style {
-  text-decoration: none;
-  &:visited {
-    text-decoration: none;
-  }
-}

@@ -1,0 +1,34 @@
+@import "../variables";
+.advantage-card {
+  padding: 40px 20px;
+  background-color: $mobile-menu-background-color ;
+  color: white;
+  text-align: center;
+}
+
+.advantage-card--with-triangle {
+  padding-top: 80px;
+  background: $mobile-menu-background-color url("/img/bg-triangle.svg") no-repeat top center;
+}
+
+.advantage-card__title {
+  margin: 0;
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.advantage-card__number {
+  display: block;
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantage-card__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}

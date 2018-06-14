@@ -1,0 +1,26 @@
+@import "../variables";
+.feature {
+  display: flex;
+  padding: 20px 20px 0 20px;
+}
+
+.feature__icon {
+  padding-right: 10px;
+  width: 40px;
+  height: 100%;
+}
+
+.feature__title {
+  margin: 10px 0;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.feature__description {
+  font-size: 14px;
+  line-height: 21px;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+}

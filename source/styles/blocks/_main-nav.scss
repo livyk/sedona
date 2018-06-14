@@ -1,8 +1,6 @@
-@import "../mixins";
 @import "../variables";
 
 .main-nav__list {
-  @include reset-list-style;
   display: flex;
   flex-direction: column;
 }
@@ -18,11 +16,9 @@
 
 .main-nav__list-item-link {
   color: white;
-  @include reset-link-style;
 }
 
 .main-nav__close-button {
-  @include reset-buttom-style;
   background: url("/img/icon-cross.svg");
 }
 
@@ -36,7 +32,6 @@
 }
 
 .main-nav__burger-button {
-  @include reset-buttom-style;
   background: url("/img/icon-burger.svg");
 }
 
