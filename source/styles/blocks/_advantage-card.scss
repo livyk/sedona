@@ -1,9 +1,18 @@
 @import "../variables";
 .advantage-card {
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
   background-color: $mobile-menu-background-color ;
   color: white;
   text-align: center;
+  border-bottom: solid 1px transparent; //Запрещаем схлопывание
+}
+
+.advantage-card--gray {
+  color: black;
+  background-color: $advantage-secondary-background;
+  & .advantage-card__number, & .advantage-card__description {
+    color: $secondary-text-color;
+  }
 }
 
 .advantage-card--with-triangle {
@@ -27,8 +36,16 @@
 }
 
 .advantage-card__description {
-  margin: 0;
+  margin: 0 0 30px 0;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  border-bottom: solid transparent 0;
+}
+
+.advantage-card__divider {
+  margin: 0;
+  height: 1px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
 }
