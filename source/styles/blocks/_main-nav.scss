@@ -23,7 +23,7 @@
 
 .main-nav__close-button {
   @include reset-buttom-style;
-  background: url("img/icon-cross.svg");
+  background: url("/img/icon-cross.svg");
 }
 
 .main-nav__bar {
@@ -34,3 +34,9 @@
   display: block;
   margin: 0 auto;
 }
+
+.main-nav__burger-button {
+  @include reset-buttom-style;
+  background: url("/img/icon-burger.svg");
+}
+

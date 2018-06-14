@@ -1,0 +1,17 @@
+.intro {
+  height: 390px;
+  background: url("/img/bg-back-mobile@1x.jpg") no-repeat scroll center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__text-sedona {
+  width: 280px;
+  margin: auto;
+}
+
+.intro__bg-triangle {
+  width: 100%;
+}
