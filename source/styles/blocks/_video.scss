@@ -1,0 +1,57 @@
+@import "../variables";
+
+.video__interface {
+  position: relative;
+  z-index: 2;
+  margin-top: -45px;
+  padding: 0 20px;
+}
+
+.video__image {
+  display: block;
+  width: 100%;
+}
+
+.video__timeline {
+  background-color: rgba(black, 0.6);
+  padding: 21px;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: rgba(white, 0.2);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    left: 40px;
+    transform: translate(0,-50%);
+  }
+}
+
+.video__controls {
+  background-color: $input-background-color;
+  height: 66px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.video__control {
+  flex-shrink: 0;
+  path {
+    fill: #5c6870;
+  }
+}
+
+.video__control--subtitles {
+  margin-left: auto;
+  margin-right: 30px;
+}

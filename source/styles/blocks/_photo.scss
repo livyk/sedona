@@ -1,0 +1,12 @@
+@import "../variables";
+
+.photo__title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  font-size: 14px;
+  color: $secondary-text-color;
+}
