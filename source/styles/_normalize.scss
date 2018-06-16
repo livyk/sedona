@@ -19,6 +19,17 @@ a {
   font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
+input, textarea {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  margin: 0;
+}
+
 body, html {
   margin: 0;
   padding: 0;

@@ -35,6 +35,7 @@
       <img src="img/text-sedona.svg" alt="Sedona" class="intro__text-sedona">
     </div>
   </header>
+
     <main class="page-main">
       <header class="header section-header">
         <h1 class="section-header__title">Оставить свой отзыв</h1>
@@ -47,46 +48,53 @@
         <section class="feedback-form__section">
           <h2 class="feedback-form__title">Представьтесь:</h2>
           <div class="form-group">
-            <label for="name" class="form-group__label">Имя*</label>
+            <label for="name" class="form-group__label">Имя*:</label>
             <input id="name" type="text" class="form-group__input">
           </div>
           <div class="form-group">
-            <label for="second-name" class="form-group__label">Фамилия*</label>
+            <label for="second-name" class="form-group__label">Фамилия*:</label>
             <input id="second-name" type="text" class="form-group__input">
           </div>
           <div class="form-group">
-            <label for="patronymic" class="form-group__label">Отчество</label>
+            <label for="patronymic" class="form-group__label">Отчество:</label>
             <input id="patronymic" type="text" class="form-group__input">
           </div>
         </section>
 
-        <section class="feedback-form__section feedback-form__block-fluid">
+        <section class="feedback-form__section feedback-form__section--fluid">
           <h2 class="feedback-form__title">Контактная информация:</h2>
-          <div class="form-group">
-            <label for="phone" class="form-group__label form-group__label--top">Контактный телефон*</label>
-            <input id="phone" placeholder="Введите телефон" type="text" class="form-group__input">
-            <i class="form-group__icon form-group__icon--phone"></i>
+          <div class="form-group form-group--column">
+            <label for="phone" class="form-group__label">Контактный телефон*</label>
+            <div class="form-group__input-with-icon">
+              <input id="phone" placeholder="Введите телефон" type="text" class="form-group__input">
+              <i class="form-group__input-icon form-group__input-icon--phone"></i>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="email" class="form-group__label form-group__label--top">Электронная почта*</label>
-            <input id="email" type="email" class="form-group__input">
-            <i class="form-group__icon form-group__icon--mail"></i>
+          <div class="form-group form-group--column">
+            <label for="email" class="form-group__label">Электронная почта*</label>
+            <div class="form-group__input-with-icon">
+              <input id="email" placeholder="Введите e-mail" type="email" class="form-group__input">
+              <i class="form-group__input-icon form-group__input-icon--mail"></i>
+            </div>
           </div>
         </section>
 
         <section class="feedback-form__section">
           <h2 class="feedback-form__title">Ваше общее впечатление:</h2>
           <div class="form-group">
-            <input id="positive" value="1" type="radio" class="form-group__radio">
-            <label for="positive" class="form-group__label">Скорее положительное</label>
+            <input id="positive" name="impression" checked type="radio" class="form-group__radio">
+            <span class="form-group__radio-checkmark"></span>
+            <label for="positive" class="form-group__label form-group__label--bold">Скорее положительное</label>
           </div>
           <div class="form-group">
-            <input id="negative" type="radio" class="form-group__radio">
-            <label for="negative" class="form-group__label">Скорее отрицательное</label>
+            <input id="negative" name="impression" type="radio" class="form-group__radio">
+            <span class="form-group__radio-checkmark"></span>
+            <label for="negative" class="form-group__label form-group__label--bold">Скорее отрицательное</label>
           </div>
           <div class="form-group">
-            <input id="difficult-to-answer" type="radio" class="form-group__radio">
-            <label for="difficult-to-answer" class="form-group__label">Затрудняюсь ответить</label>
+            <input id="difficult-to-answer" name="impression" type="radio" class="form-group__radio">
+            <span class="form-group__radio-checkmark"></span>
+            <label for="difficult-to-answer" class="form-group__label form-group__label--bold">Затрудняюсь ответить</label>
           </div>
         </section>
 
@@ -94,27 +102,30 @@
           <h2 class="feedback-form__title">Посещенные достопримечательности:</h2>
           <div class="form-group">
             <input id="devil-bridge" checked type="checkbox" class="form-group__checkbox">
+            <span class="form-group__checkbox-checkmark"></span>
             <label for="devil-bridge" class="form-group__label">Мост Дьявола</label>
           </div>
           <div class="form-group">
-            <input id="mountain-bell" checked type="checkbox" class="form-group__checkbox">
+
+            <input id="mountain-bell" type="checkbox" class="form-group__checkbox">
+            <span class="form-group__checkbox-checkmark"></span>
             <label for="mountain-bell" class="form-group__label">Гора Колокол</label>
           </div>
           <div class="form-group">
-            <input id="side-park" checked type="checkbox" class="form-group__checkbox">
+            <input id="side-park" type="checkbox" class="form-group__checkbox">
+            <span class="form-group__checkbox-checkmark"></span>
             <label for="side-park" class="form-group__label">Сайд-парк</label>
           </div>
           <div class="form-group">
             <input id="red-rocks" type="checkbox" class="form-group__checkbox">
+            <span class="form-group__checkbox-checkmark"></span>
             <label for="red-rocks" class="form-group__label">Сайд-парк</label>
           </div>
         </section>
         <section class="feedback-form__section">
           <h2 class="feedback-form__title">Опишите свои эмоции:</h2>
           <div class="form-group">
-            <textarea name="emotions" id="emotions" cols="30" rows="10"
-                      placeholder="Опишите подробно все свои восторги">
-            </textarea>
+            <textarea class="form-group__textarea" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </section>
         <button type="submit" class="base-button">Отправить отзыв</button>
@@ -123,11 +134,11 @@
     <footer class="page-footer">
       <a href="#" class="page-footer__hashtag">#visitsedona</a>
       <div class="page-footer__social social">
-        <a href="#">twitter</a>
-        <a href="#">facebook</a>
-        <a href="#">youtube</a>
-        <a href="#" class="page-footer__created-by">Разработано</a>
+        <a class="social__link social__link--twitter" href="#"></a>
+        <a class="social__link social__link--facebook" href="#"></a>
+        <a class="social__link social__link--youtube" href="#"></a>
       </div>
+      <a href="#" class="page-footer__created-by">Разработано <img class="page-footer__created-by-icon" src="/img/htmlacademy.svg" alt="html academy"></a>
     </footer>
   </body>
 </html>
