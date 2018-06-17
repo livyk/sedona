@@ -1,7 +1,7 @@
 @import "../variables";
 .advantage-card {
   padding: 40px 20px 0 20px;
-  background-color: $mobile-menu-background-color ;
+  background-color: $control-background-color;
   color: white;
   text-align: center;
   border-bottom: solid 1px transparent; //Запрещаем схлопывание
@@ -17,7 +17,7 @@
 
 .advantage-card--with-triangle {
   padding-top: 80px;
-  background: $mobile-menu-background-color url("/img/bg-triangle.svg") no-repeat top center;
+  background: $control-background-color url("/img/bg-triangle.svg") no-repeat top center;
 }
 
 .advantage-card__title {

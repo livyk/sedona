@@ -8,17 +8,17 @@
   width: 48px;
   height: 48px;
   margin: 0 6px;
-  background-color: $mobile-menu-background-color;
+  background-color: $control-background-color;
 }
 
 .social__link--facebook {
-  background: $mobile-menu-background-color url("/img/icon-facebook.svg") no-repeat center center;
+  background: $control-background-color url("/img/icon-facebook.svg") no-repeat center center;
 }
 
 .social__link--twitter {
-  background: $mobile-menu-background-color url("/img/icon-twitter.svg") no-repeat center center;
+  background: $control-background-color url("/img/icon-twitter.svg") no-repeat center center;
 }
 
 .social__link--youtube {
-  background: $mobile-menu-background-color url("/img/icon-youtube.svg") no-repeat center center;
+  background: $control-background-color url("/img/icon-youtube.svg") no-repeat center center;
 }
