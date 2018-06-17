@@ -7,7 +7,7 @@
   height: 390px;
   background: url("/img/bg-intro-triangle-mobile.svg") no-repeat center bottom,
               url("/img/bg-back-mobile@1x.jpg") no-repeat scroll center;
-  background-size: cover, auto;
+  background-size: contain, auto;
 }
 
 .intro--mini {
@@ -16,5 +16,6 @@
 }
 
 .intro__text-sedona {
+  margin-top: 4px;
   max-width: 280px;
 }

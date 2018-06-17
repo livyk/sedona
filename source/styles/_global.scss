@@ -14,7 +14,7 @@
 
 body {
   font-family: 'PT Sans', 'Arial', sans-serif;
-  //background: url("/img/sedona-index-mobile.jpg") no-repeat 50% 0;
+  //background: url("/img/sedona-index-mobile.jpg") no-repeat;
 }
 
 .visually-hidden {
@@ -30,7 +30,7 @@ body {
   overflow: hidden;
 }
 
-//
-//main, header {
-//  visibility: hidden;
-//}
+
+main, footer {
+  visibility: hidden;
+}

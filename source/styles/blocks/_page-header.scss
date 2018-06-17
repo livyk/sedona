@@ -1,0 +1,11 @@
+.page-header {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    max-width: 768px;
+  }
+}
