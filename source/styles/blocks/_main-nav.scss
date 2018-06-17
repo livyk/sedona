@@ -22,6 +22,12 @@
     background-color: $mobile-menu-background-color;
     border-bottom: solid #678fa8 1px;
     border-top: solid #9ac2db 1px;
+    cursor: default;
+
+    &:hover[href] {
+      color: $mobile-menu-background-color;
+      cursor: pointer;
+    }
   }
   &:last-child a{
     border-bottom: none;
@@ -37,7 +43,7 @@
 
 .main-nav__bar {
   position: relative;
-  height: 56px;
+  height: 55px;
   display: flex;
   justify-content: center;
 }
@@ -49,7 +55,7 @@
 
 .main-nav__burger-button {
   position: absolute;
-  top: 17px;
+  top: 16px;
   right: 14px;
 }
 
@@ -76,9 +82,24 @@
   }
 
   .main-nav__bar {
-    position: absolute;
+    position: static;
     width: 100%;
     top: 0;
+    height: 0;
   }
 
+  .main-nav__logo {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .main-nav__logo {
+    width: 190px;
+    height: 96px;
+  }
 }

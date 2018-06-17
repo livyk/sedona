@@ -1,4 +1,4 @@
-
+@import "variables";
 @font-face {
   font-family: 'PT Sans';
   src: url("/fonts/ptsans.woff") format("woff"),
@@ -14,6 +14,7 @@
 
 body {
   font-family: 'PT Sans', 'Arial', sans-serif;
+  background-color: $input-background-color;
   //background: url("/img/sedona-index-mobile.jpg") no-repeat;
 }
 
