@@ -19,3 +19,14 @@
   text-transform: uppercase;
   color: $secondary-text-color;
 }
+
+.section-header--big-header {
+  padding: 28px 0 0 0 ;
+  & .section-header__title {
+    font-size: 21px;
+  }
+  & .section-header__description {
+    margin-top: 19px;
+    line-height: 24px;
+  }
+}

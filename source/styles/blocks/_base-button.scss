@@ -3,11 +3,23 @@
   display: block;
   padding: 15px 0;
   width: 100%;
-  background-color: $control-background-color;
-  color: white;
+
   text-align: center;
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 28px;
   text-transform: uppercase;
+
+  background-color: $control-background-color;
+  color: $control-color;
+
+  &:hover {
+    background-color: $control-hover-background-color;
+    color: $control-hover-color;
+  }
+
+  &:active {
+    background-color: $control-down-background-color;
+    color: $control-down-color;
+  }
 }
