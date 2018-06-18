@@ -75,6 +75,10 @@
 
   .main-nav__list-item {
     width: 20%;
+    &:last-child a {
+      box-shadow: none;
+    }
+
     & a {
       background-color: white;
       border: none;
