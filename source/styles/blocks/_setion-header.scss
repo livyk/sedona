@@ -1,18 +1,19 @@
 @import "../variables";
 .section-header {
-  padding: 0 20px;
+  padding: 41px 20px 5px 20px;
   text-align: center;
+  background-color: white;
 }
 
 .section-header__title {
-  margin: 30px 0;
+  padding: 0 3px;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
 .section-header__description {
-  margin: 30px 0;
+  margin-top: 27px;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
