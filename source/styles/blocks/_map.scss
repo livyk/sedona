@@ -1,0 +1,20 @@
+@import "../variables";
+
+.map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &:after {
+    content: '';
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    background-color: $control-background-color;
+    border: 5px solid white;
+    box-sizing: border-box;
+    margin-left: -1px;
+    margin-top: -2px;
+  }
+}

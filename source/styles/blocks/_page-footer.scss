@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 40px 0;
+  padding: 35px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,16 +15,20 @@
   text-transform: uppercase;
 }
 
-.page-footer__created-by {
+.page-footer__copyright {
+  margin-top: 28px;
+  margin-left: -12px;
   color: black;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
-.page-footer__created-by-icon {
+.page-footer__copyright-icon{
   position: relative;
   top: 14px;
+  right: -10px;
 }
 
 .page-footer__social {
-  margin: 40px 0;
+  margin-top: 37px;
 }
