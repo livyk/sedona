@@ -139,8 +139,8 @@
             <h2 class="advantage-card__title">Красивая дорога</h2>
             <small class="advantage-card__number">&mdash; №4 &mdash;</small>
             <p class="advantage-card__description">
-              Ехать в Седону из <br class="advantage-card__text-divider">
-              Лас-Вегаса совсем <br class="advantage-card__text-divider"> не скучно
+              Ехать в Седону из <br class="break break--tablet text--desktop">
+              Лас-Вегаса совсем <br class="break break--tablet text--desktop"> не скучно
             </p>
             <hr class="advantage-card__divider">
           </div>
@@ -153,18 +153,23 @@
         </div>
       </section>
       <section class="to-hotel">
-        <header class="section-header section-header--big-header">
+        <header class="section-header section-header--big-title
+">
           <h1 class="section-header__title">
             Заинтересовались?
           </h1>
           <p class="section-header__description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+            Укажите предполагаемые даты поездки, <br class="break break--tablet break--desktop"> и мы покажем вам лучшие предложения гостиниц в седоне
           </p>
         </header>
         <a href="#" class="base-button to-hotel__hotel-search-link">Найти гостиницу</a>
       </section>
       <section class="map">
-        <img class="map__image" src="img/bg-map-mobile@1x.jpg" alt="map">
+        <picture class="map__image">
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+          <img src="img/bg-map-mobile@1x.jpg" alt="map">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">

@@ -24,7 +24,7 @@
   color: $secondary-text-color;
 }
 
-.section-header--big-header {
+.section-header--big-title {
   padding: 28px 0 0 0 ;
   & .section-header__title {
     font-size: 21px;
@@ -32,6 +32,7 @@
   & .section-header__description {
     margin-top: 19px;
     line-height: 24px;
+    width: 290px;
   }
 }
 
@@ -48,6 +49,18 @@
   }
   .section-header__description {
     margin-top: 28px;
+  }
+
+  .section-header--big-title {
+    padding-top: 54px;
+    padding-bottom: 7px;
+    .section-header__title {
+      font-size: 30px;
+    }
+    .section-header__description {
+      width: auto;
+      margin-top: 31px;
+    }
   }
 }
 
