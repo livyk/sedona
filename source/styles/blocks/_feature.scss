@@ -1,6 +1,6 @@
 @import "../variables";
 .feature {
-  padding: 0 20px 29px 20px;
+  padding: 0 20px 30px 20px;
 }
 
 .feature__title-wrapper {
@@ -37,4 +37,64 @@
   line-height: 21px;
   color: $secondary-text-color;
   text-transform: uppercase;
+}
+
+.feature__text-divider {
+  //display: none;
+}
+
+@media (min-width: $tablet-screen) {
+  .feature {
+    width: 256px;
+    padding: 60px 0 54px 0;
+  }
+  .feature__icon--house {
+    height: 72px;
+    width: 75px;
+    margin: 0 2px 0 0;
+  }
+  .feature__icon--burger {
+     height: 68px;
+     width: 77px;
+     margin: 3px 1px 1px 0;
+   }
+  .feature__icon--gift {
+    height: 75px;
+    width: 64px;
+    margin: -3px 3px 1px 0;
+  }
+  .feature__title-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature__title {
+    font-size: 21px;
+    margin-top: 27px;
+  }
+  .feature__description {
+    margin: 21px auto 0 auto;
+    width: 156px;
+    text-align: center;
+  }
+  .feature--gift {
+    order: 2;
+    & .feature__description {
+      width: 165px;
+    }
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .feature {
+    width: 400px;
+    padding-bottom: 73px;
+  }
+  .feature__description {
+    width: 285px;
+  }
+  .feature--gift {
+    & .feature__description {
+      width: 285px;
+    }
+  }
 }

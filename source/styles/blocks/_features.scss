@@ -1,4 +1,23 @@
+@import "../variables";
 .features {
-  padding-top: 35px;
+  padding-top: 37px;
   padding-bottom: 7px;
+  background-color: white;
+}
+
+@media (min-width: $tablet-screen) {
+  .features {
+    padding-top: 0px;
+    margin: 0 auto;
+    max-width: $tablet-screen;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .features {
+    max-width: $desktop-screen;
+
+  }
 }

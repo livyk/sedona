@@ -5,12 +5,18 @@
   flex-direction: column;
 }
 
+.advantage__image {
+  height: 256px;
+}
 
 @media (min-width: $tablet-screen) {
   .advantage {
     flex-direction: row;
     justify-content: center;
     align-items: start;
+  }
+  .advantage__image {
+    height: 256px;
   }
 }
 
