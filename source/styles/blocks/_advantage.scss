@@ -1,8 +1,24 @@
+@import "../variables";
+
 .advantage {
+  display: flex;
+  flex-direction: column;
 }
 
-.advantage__image {
-  display: block;
-  width: 100%;
-  height: auto;
+
+@media (min-width: $tablet-screen) {
+  .advantage {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .advantage__image {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 256px;
+  }
 }

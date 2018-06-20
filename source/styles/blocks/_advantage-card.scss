@@ -1,67 +1,81 @@
 @import "../variables";
+
 .advantage-card {
   position: relative;
-  padding: 41px 20px 39px 20px;
+  padding: 37px 0 40px;
   background-color: $control-background-color;
   color: white;
   text-align: center;
-  border-bottom: solid 1px transparent; //Запрещаем схлопывание
-}
-
-.advantage-card--gray {
-  padding: 30px 20px 0 20px;
-  color: black;
-  background-color: $advantage-secondary-background;
-  & .advantage-card__number, & .advantage-card__description {
-    color: $secondary-text-color;
-  }
-  & .advantage-card__description {
-    margin-bottom: 26px;
-    padding: 0 11px;
-  }
-}
-
-.advantage-card--with-triangle {
-  padding-top: 80px;
-  background: $control-background-color url("/img/bg-triangle.svg") no-repeat top center;
-  background-size: 102%; //Треугольник не тянется на всю ширину
-}
-
-.advantage-card__triangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 37px;
-  z-index: 100;
+  flex-shrink: 0;
 }
 
 .advantage-card__title {
-  margin: 0;
-  line-height: 19px;
   font-size: 18px;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
 .advantage-card__number {
   display: block;
-  margin-top: 13px;
+  margin: 12px 0 17px 0;
   font-size: 14px;
-  line-height: 21px;
 }
 
 .advantage-card__description {
-  margin-top: 15px;
+  width: 268px;
+  margin: 0 auto;
   font-size: 14px;
-  line-height: 21px;
   text-transform: uppercase;
-  border-bottom: solid transparent 0;
+  line-height: 21px;
 }
 
-.advantage-card__divider {
-  margin: 0;
-  height: 1px;
-  border: none;
-  background-color: rgba(0, 0, 0, 0.1);
+.advantage-card__triangle {
+  top: -1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100vw;
+  height: auto;
+}
+
+.advantage-card--with-triangle {
+  padding-top: 77px;
+}
+
+@media (min-width: $tablet-screen) {
+  .advantage-card--with-triangle {
+    padding-top: 37px;
+    .advantage-card__triangle {
+      display: none;
+    }
+  }
+
+  .advantage-card {
+    width: 256px;
+    padding: 45px 0;
+  }
+  .advantage-card__title {
+    width: 165px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .advantage-card__number {
+    margin: 11px 0 22px ;
+  }
+  .advantage-card__description {
+    width: 165px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .advantage-card {
+    width: 400px;
+    padding-top: 53px;
+    padding-bottom: 58px;
+  }
+  .advantage-card__description {
+    width: 265px;
+  }
 }
