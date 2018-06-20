@@ -37,7 +37,7 @@
 
 @media (min-width: $tablet-screen) {
   .section-header {
-    max-width: 1200px;
+    max-width: $tablet-screen;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 50px 0 50px 0;
@@ -51,3 +51,8 @@
   }
 }
 
+@media (min-width: $desktop-screen) {
+  .section-header {
+    max-width: $desktop-screen;
+  }
+}
