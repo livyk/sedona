@@ -51,7 +51,7 @@
     </header>
 
     <main>
-      <section class="advantages ">
+      <section class="advantages">
         <header class="section-header">
           <h1 class="section-header__title">
             СЕДОНА — небольшой
@@ -113,33 +113,43 @@
             </p>
           </div>
         </div>
-        <div class="advantage">
+        <div class="advantage advantage--bridge">
           <div class="advantage-card ">
-            <h2 class="advantage-card__title">Там есть Мост Дьявола</h2>
+            <h2 class="advantage-card__title">Там есть <br class="advantage-card__text-divider"> Мост Дьявола</h2>
             <small class="advantage-card__number">&mdash; №2 &mdash;</small>
             <p class="advantage-card__description">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </div>
-          <img src="img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола" class="advantage__image">
+          <picture class="advantage__image">
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
+            <source media="(max-width: 767px)" srcset="img/main-bridge-mobile@1x.jpg">
+            <img src="/img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола" >
+          </picture>
         </div>
-        <div class="advantage-card advantage-card--gray">
-          <h2 class="advantage-card__title">Небольшая площадь</h2>
-          <small class="advantage-card__number">&mdash; №3 &mdash;</small>
-          <p class="advantage-card__description">Все интересные места находятся очень близко</p>
-          <hr class="advantage-card__divider">
-        </div>
-        <div class="advantage-card advantage-card--gray">
-          <h2 class="advantage-card__title">Красивая дорога</h2>
-          <small class="advantage-card__number">&mdash; №4 &mdash;</small>
-          <p class="advantage-card__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-          <hr class="advantage-card__divider">
-        </div>
-        <div class="advantage-card advantage-card--gray">
-          <h2 class="advantage-card__title">Мало туристов</h2>
-          <small class="advantage-card__number">&mdash; №5 &mdash;</small>
-          <p class="advantage-card__description">Большинство едет в гранд каньон
-            и толпится там</p>
+        <div class="advantage__secondary-items">
+          <div class="advantage-card advantage-card--gray">
+            <h2 class="advantage-card__title">Небольшая площадь</h2>
+            <small class="advantage-card__number">&mdash; №3 &mdash;</small>
+            <p class="advantage-card__description">Все интересные места находятся очень близко</p>
+            <hr class="advantage-card__divider">
+          </div>
+          <div class="advantage-card advantage-card--gray">
+            <h2 class="advantage-card__title">Красивая дорога</h2>
+            <small class="advantage-card__number">&mdash; №4 &mdash;</small>
+            <p class="advantage-card__description">
+              Ехать в Седону из <br class="advantage-card__text-divider">
+              Лас-Вегаса совсем <br class="advantage-card__text-divider"> не скучно
+            </p>
+            <hr class="advantage-card__divider">
+          </div>
+          <div class="advantage-card advantage-card--gray">
+            <h2 class="advantage-card__title">Мало туристов</h2>
+            <small class="advantage-card__number">&mdash; №5 &mdash;</small>
+            <p class="advantage-card__description">Большинство едет в гранд каньон
+              и толпится там</p>
+          </div>
         </div>
       </section>
       <section class="to-hotel">

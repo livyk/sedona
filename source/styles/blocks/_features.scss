@@ -1,17 +1,24 @@
 @import "../variables";
 .features {
-  padding-top: 37px;
+  padding-top: 35px;
   padding-bottom: 7px;
   background-color: white;
 }
 
+.feature__text-divider {
+  display: none;
+}
+
 @media (min-width: $tablet-screen) {
   .features {
-    padding-top: 0px;
+    padding-top: 0;
     margin: 0 auto;
     max-width: $tablet-screen;
     display: flex;
     justify-content: center;
+  }
+  .feature__text-divider {
+    display: inline;
   }
 }
 

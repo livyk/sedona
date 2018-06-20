@@ -6,7 +6,7 @@
 }
 
 .advantage__image {
-  height: 256px;
+  height: 260px;
 }
 
 @media (min-width: $tablet-screen) {
@@ -17,6 +17,9 @@
   }
   .advantage__image {
     height: 256px;
+  }
+  .advantage--bridge {
+    flex-direction: row-reverse;
   }
 }
 

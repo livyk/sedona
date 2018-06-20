@@ -1,0 +1,15 @@
+@import "../variables";
+
+
+@media (min-width: $tablet-screen) {
+  .advantages {
+    max-width: $tablet-screen;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .advantages {
+    max-width: $desktop-screen;
+  }
+}
