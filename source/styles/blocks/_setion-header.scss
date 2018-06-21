@@ -17,11 +17,17 @@
 
 .section-header__description {
   margin-top: 27px;
-  width: 85%;
+  width: 86%;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   color: $secondary-text-color;
+}
+
+.section-header__description--feedback {
+  margin-top: 22px;
+  margin-bottom: 13px;
+  line-height: 24px;
 }
 
 .section-header--big-title {

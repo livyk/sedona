@@ -1,14 +1,40 @@
 .feedback-form {
-  padding: 0 20px;
+  padding-bottom: 42px;
+  background-color: white;
 }
-.feedback-form__section {
-  padding: 0;
+.feedback-form__fieldset {
+  position: relative;
+  padding: 66px 20px 4px 20px;
+  border-top: 1px solid #e5e5e5;
 }
 
-.feedback-form__title {
+.feedback-form__fieldset--fluid {
+  padding-bottom: 14px;
+}
+
+.feedback-form__fieldset--impressions {
+  padding-bottom: 12px;
+}
+.feedback-form__fieldset--attractions {
+  padding-top: 87px;
+  padding-bottom: 1px;
+}
+.feedback-form__fieldset--emotions {
+  padding-top: 61px;
+}
+.feedback-form__legend {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 18px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.form-group__send-button {
+  margin: 27px auto 0 auto;
+  max-width: 280px;
 }

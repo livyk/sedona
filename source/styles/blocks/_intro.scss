@@ -13,7 +13,12 @@
 }
 
 .intro--mini {
+  height: 158px;
   background-position: bottom center;
+  & .intro__text-sedona {
+    margin-top: -14px;
+    max-width: 230px;
+  }
 }
 
 .intro__text-sedona {

@@ -8,27 +8,41 @@
   </head>
   <body>
     <header class="page-header">
-    <nav class="main-nav page-header__main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="main-nav__list-item site-list__item">
-          <a class="main-nav__list-item-link" href="#">Главная</a>
-          <button type="button" class="main-nav__close-button"></button>
+    <nav class="main-nav main-nav--closed page-header__main-nav">
+      <ul class="main-nav__list ">
+        <li class="main-nav__list-item main-nav__list-item--active">
+          <a class="main-nav__list-item-link">Главная</a>
+          <button type="button" class="main-nav__close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23">
+              <path fill="#fff" d="M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z"></path>
+            </svg>
+          </button>
         </li>
-        <li class="main-nav__list-item site-list__item">
-          <a class="main-nav__list-item-link" href="#">Фото и видео</a>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-item-link" href="/galery.html">Фото и видео</a>
         </li>
-        <li class="main-nav__list-item site-list__item">
-          <a class="main-nav__list-item-link" href="#">Форма отзыва</a>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-item-link" href="/feedback-form.html">Форма отзыва</a>
         </li>
-        <li class="main-nav__list-item site-list__item">
+        <li class="main-nav__list-item">
           <a class="main-nav__list-item-link" href="#">Html academy</a>
         </li>
       </ul>
       <div class="main-nav__bar">
-        <img src="img/logo-sedona-mobile.svg"
-             alt="City of Sedona"
-             class="main-nav__logo">
-        <button class="main-nav__burger-button" type="button" ></button>
+        <a href="index.html" class="main-nav__home">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="/img/logo-sedona-tablet.svg">
+            <source media="(min-width: 320px)" srcset="/img/logo-sedona-mobile.svg">
+            <img src="img/logo-sedona-mobile.svg" width="103" height="85" alt="City of Sedona" class="main-nav__logo">
+          </picture>
+        </a>
+        <button class="main-nav__burger-button" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22.928" height="21.982" fill="#81b3d2">
+            <path d="M0 0h22.928v3.964H0zm0 9.009h22.928v3.964H0zm0 9.009h22.928v3.964H0z">
+            </path>
+          </svg>
+        </button>
       </div>
     </nav>
     <div class="intro intro--mini">
@@ -39,14 +53,14 @@
     <main class="page-main">
       <header class="header section-header">
         <h1 class="section-header__title">Оставить свой отзыв</h1>
-        <p class="section-header__description">
+        <p class="section-header__description section-header__description--feedback">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
           посещенных вами достопримечательностях
         </p>
       </header>
       <form class="feedback-form">
-        <section class="feedback-form__section">
-          <h2 class="feedback-form__title">Представьтесь:</h2>
+        <fieldset class="feedback-form__fieldset">
+          <legend class="feedback-form__legend">Представьтесь:</legend>
           <div class="form-group">
             <label for="name" class="form-group__label">Имя*:</label>
             <input id="name" type="text" class="form-group__input">
@@ -59,10 +73,10 @@
             <label for="patronymic" class="form-group__label">Отчество:</label>
             <input id="patronymic" type="text" class="form-group__input">
           </div>
-        </section>
+        </fieldset>
 
-        <section class="feedback-form__section feedback-form__section--fluid">
-          <h2 class="feedback-form__title">Контактная информация:</h2>
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--fluid">
+          <legend class="feedback-form__legend">Контактная информация:</legend>
           <div class="form-group form-group--column">
             <label for="phone" class="form-group__label">Контактный телефон*</label>
             <div class="form-group__input-with-icon">
@@ -77,60 +91,61 @@
               <i class="form-group__input-icon form-group__input-icon--mail"></i>
             </div>
           </div>
-        </section>
+        </fieldset>
 
-        <section class="feedback-form__section">
-          <h2 class="feedback-form__title">Ваше общее впечатление:</h2>
-          <div class="form-group">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--impressions">
+          <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
+          <div class="form-group form-group--radio">
             <input id="positive" name="impression" checked type="radio" class="form-group__radio">
             <span class="form-group__radio-checkmark"></span>
             <label for="positive" class="form-group__label form-group__label--bold">Скорее положительное</label>
           </div>
-          <div class="form-group">
+          <div class="form-group form-group--radio">
             <input id="negative" name="impression" type="radio" class="form-group__radio">
             <span class="form-group__radio-checkmark"></span>
             <label for="negative" class="form-group__label form-group__label--bold">Скорее отрицательное</label>
           </div>
-          <div class="form-group">
+          <div class="form-group form-group--radio">
             <input id="difficult-to-answer" name="impression" type="radio" class="form-group__radio">
             <span class="form-group__radio-checkmark"></span>
             <label for="difficult-to-answer" class="form-group__label form-group__label--bold">Затрудняюсь ответить</label>
           </div>
-        </section>
+        </fieldset>
 
-        <section class="feedback-form__section">
-          <h2 class="feedback-form__title">Посещенные достопримечательности:</h2>
-          <div class="form-group">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--attractions">
+          <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
+          <div class="form-group form-group--checkbox">
             <input id="devil-bridge" checked type="checkbox" class="form-group__checkbox">
             <span class="form-group__checkbox-checkmark"></span>
             <label for="devil-bridge" class="form-group__label">Мост Дьявола</label>
           </div>
-          <div class="form-group">
+          <div class="form-group form-group--checkbox">
 
             <input id="mountain-bell" type="checkbox" class="form-group__checkbox">
             <span class="form-group__checkbox-checkmark"></span>
-            <label for="mountain-bell" class="form-group__label">Гора Колокол</label>
+            <label for="mountain-bell" class="form-group__label">Гора-Колокол</label>
           </div>
-          <div class="form-group">
+          <div class="form-group form-group--checkbox">
             <input id="side-park" type="checkbox" class="form-group__checkbox">
             <span class="form-group__checkbox-checkmark"></span>
             <label for="side-park" class="form-group__label">Сайд-парк</label>
           </div>
-          <div class="form-group">
+          <div class="form-group form-group--checkbox">
             <input id="red-rocks" type="checkbox" class="form-group__checkbox">
             <span class="form-group__checkbox-checkmark"></span>
-            <label for="red-rocks" class="form-group__label">Сайд-парк</label>
+            <label for="red-rocks" class="form-group__label">Красные скалы</label>
           </div>
-        </section>
-        <section class="feedback-form__section">
-          <h2 class="feedback-form__title">Опишите свои эмоции:</h2>
+        </fieldset>
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--emotions">
+          <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
           <div class="form-group">
             <textarea class="form-group__textarea" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-        </section>
-        <button type="submit" class="base-button">Отправить отзыв</button>
+        </fieldset>
+        <button type="submit" class="form-group__send-button base-button">Отправить отзыв</button>
       </form>
     </main>
+
     <footer class="page-footer">
       <a href="#" class="page-footer__hashtag">#visitsedona</a>
       <div class="page-footer__social social">
@@ -138,7 +153,15 @@
         <a class="social__link social__link--facebook" href="#"></a>
         <a class="social__link social__link--youtube" href="#"></a>
       </div>
-      <a href="#" class="page-footer__created-by">Разработано <img class="page-footer__copyright-icon" src="/img/htmlacademy.svg" alt="html academy"></a>
+      <!--<span class="page-footer__copyright">Разработано</span>-->
+      <a href="https://htmlacademy.ru/" class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <svg class="page-footer__copyright-icon" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
+          <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z">
+          </path>
+        </svg>
+      </a>
     </footer>
+    <script src="/js/index.js"></script>
   </body>
 </html>
