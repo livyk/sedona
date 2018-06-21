@@ -50,99 +50,113 @@
     </div>
   </header>
 
-    <main class="page-main">
-      <header class="header section-header">
-        <h1 class="section-header__title">Оставить свой отзыв</h1>
-        <p class="section-header__description section-header__description--feedback">
+    <main class="feedback-page">
+      <header class="feedback-page__header">
+        <h1 class="feedback-page__title">Оставить свой отзыв</h1>
+        <p class="feedback-page__description">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
           посещенных вами достопримечательностях
         </p>
       </header>
+
       <form class="feedback-form">
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend">Представьтесь:</legend>
-          <div class="form-group">
-            <label for="name" class="form-group__label">Имя*:</label>
-            <input id="name" type="text" class="form-group__input">
-          </div>
-          <div class="form-group">
-            <label for="second-name" class="form-group__label">Фамилия*:</label>
-            <input id="second-name" type="text" class="form-group__input">
-          </div>
-          <div class="form-group">
-            <label for="patronymic" class="form-group__label">Отчество:</label>
-            <input id="patronymic" type="text" class="form-group__input">
-          </div>
-        </fieldset>
-
-        <fieldset class="feedback-form__fieldset feedback-form__fieldset--fluid">
-          <legend class="feedback-form__legend">Контактная информация:</legend>
-          <div class="form-group form-group--column">
-            <label for="phone" class="form-group__label">Контактный телефон*</label>
-            <div class="form-group__input-with-icon">
-              <input id="phone" placeholder="Введите телефон" type="text" class="form-group__input">
-              <i class="form-group__input-icon form-group__input-icon--phone"></i>
+        <section class="fieldset feedback-form__identity">
+          <h2 class="fieldset__title">Представьтесь:</h2>
+          <div class="fieldset__fields">
+            <div class="form-group">
+              <label for="name" class="form-group__label">Имя*:</label>
+              <input id="name" type="text" class="form-group__input">
+            </div>
+            <div class="form-group">
+              <label for="second-name" class="form-group__label">Фамилия*:</label>
+              <input id="second-name" type="text" class="form-group__input">
+            </div>
+            <div class="form-group">
+              <label for="patronymic" class="form-group__label">Отчество:</label>
+              <input id="patronymic" type="text" class="form-group__input">
             </div>
           </div>
-          <div class="form-group form-group--column">
-            <label for="email" class="form-group__label">Электронная почта*</label>
-            <div class="form-group__input-with-icon">
-              <input id="email" placeholder="Введите e-mail" type="email" class="form-group__input">
-              <i class="form-group__input-icon form-group__input-icon--mail"></i>
+        </section>
+
+        <section class="fieldset feedback-form__contacts">
+          <h2 class="fieldset__title">Контактная информация:</h2>
+          <div class="fieldset__fields">
+            <div class="form-group form-group--column">
+              <label for="phone" class="form-group__label">Контактный телефон*</label>
+              <div class="form-group__input-with-icon">
+                <input id="phone" placeholder="Введите телефон" type="text" class="form-group__input">
+                <i class="form-group__input-icon form-group__input-icon--phone"></i>
+
+              </div>
+            </div>
+            <div class="form-group form-group--column">
+              <label for="email" class="form-group__label">Электронная почта*</label>
+              <div class="form-group__input-with-icon">
+                <input id="email" placeholder="Введите e-mail" type="email" class="form-group__input">
+                <i class="form-group__input-icon form-group__input-icon--mail"></i>
+              </div>
             </div>
           </div>
-        </fieldset>
+        </section>
 
-        <fieldset class="feedback-form__fieldset feedback-form__fieldset--impressions">
-          <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
-          <div class="form-group form-group--radio">
-            <input id="positive" name="impression" checked type="radio" class="form-group__radio">
-            <span class="form-group__radio-checkmark"></span>
-            <label for="positive" class="form-group__label form-group__label--bold">Скорее положительное</label>
+        <section class="fieldset feedback-form__impressions">
+          <h2 class="fieldset__title fieldset__title--impressions">Ваше общее впечатление:</h2>
+          <div class="fieldset__fields">
+            <div class="form-group form-group--radio">
+              <input id="positive" name="impression" checked type="radio" class="form-group__radio">
+              <span class="form-group__radio-checkmark"></span>
+              <label for="positive" class="form-group__label form-group__label--bold">Скорее положительное</label>
+            </div>
+            <div class="form-group form-group--radio">
+              <input id="negative" name="impression" type="radio" class="form-group__radio">
+              <span class="form-group__radio-checkmark"></span>
+              <label for="negative" class="form-group__label form-group__label--bold">Скорее отрицательное</label>
+            </div>
+            <div class="form-group form-group--radio">
+              <input id="difficult-to-answer" name="impression" type="radio" class="form-group__radio">
+              <span class="form-group__radio-checkmark"></span>
+              <label for="difficult-to-answer" class="form-group__label form-group__label--bold">Затрудняюсь
+                ответить</label>
+            </div>
           </div>
-          <div class="form-group form-group--radio">
-            <input id="negative" name="impression" type="radio" class="form-group__radio">
-            <span class="form-group__radio-checkmark"></span>
-            <label for="negative" class="form-group__label form-group__label--bold">Скорее отрицательное</label>
-          </div>
-          <div class="form-group form-group--radio">
-            <input id="difficult-to-answer" name="impression" type="radio" class="form-group__radio">
-            <span class="form-group__radio-checkmark"></span>
-            <label for="difficult-to-answer" class="form-group__label form-group__label--bold">Затрудняюсь ответить</label>
-          </div>
-        </fieldset>
+        </section>
 
-        <fieldset class="feedback-form__fieldset feedback-form__fieldset--attractions">
-          <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
-          <div class="form-group form-group--checkbox">
-            <input id="devil-bridge" checked type="checkbox" class="form-group__checkbox">
-            <span class="form-group__checkbox-checkmark"></span>
-            <label for="devil-bridge" class="form-group__label">Мост Дьявола</label>
-          </div>
-          <div class="form-group form-group--checkbox">
+        <section class="fieldset feedback-form__attractions">
+          <h2 class="fieldset__title fieldset__title--attractions">Посещенные достопримечательности:</h2>
 
-            <input id="mountain-bell" type="checkbox" class="form-group__checkbox">
-            <span class="form-group__checkbox-checkmark"></span>
-            <label for="mountain-bell" class="form-group__label">Гора-Колокол</label>
+          <div class="fieldset__fields">
+            <div class="form-group form-group--checkbox">
+              <input id="devil-bridge" checked type="checkbox" class="form-group__checkbox">
+              <span class="form-group__checkbox-checkmark"></span>
+              <label for="devil-bridge" class="form-group__label form-group__label--bold">Мост Дьявола</label>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <input id="mountain-bell" type="checkbox" class="form-group__checkbox">
+              <span class="form-group__checkbox-checkmark"></span>
+              <label for="mountain-bell" class="form-group__label form-group__label--bold">Гора-Колокол</label>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <input id="side-park" type="checkbox" class="form-group__checkbox">
+              <span class="form-group__checkbox-checkmark"></span>
+              <label for="side-park" class="form-group__label form-group__label--bold">Слайд-парк</label>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <input id="red-rocks" type="checkbox" class="form-group__checkbox">
+              <span class="form-group__checkbox-checkmark"></span>
+              <label for="red-rocks" class="form-group__label form-group__label--bold">Красные скалы</label>
+            </div>
           </div>
-          <div class="form-group form-group--checkbox">
-            <input id="side-park" type="checkbox" class="form-group__checkbox">
-            <span class="form-group__checkbox-checkmark"></span>
-            <label for="side-park" class="form-group__label">Сайд-парк</label>
-          </div>
-          <div class="form-group form-group--checkbox">
-            <input id="red-rocks" type="checkbox" class="form-group__checkbox">
-            <span class="form-group__checkbox-checkmark"></span>
-            <label for="red-rocks" class="form-group__label">Красные скалы</label>
-          </div>
-        </fieldset>
-        <fieldset class="feedback-form__fieldset feedback-form__fieldset--emotions">
-          <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
+        </section>
+        <section class="fieldset feedback-form__emotions">
+          <h2 class="fieldset__title fieldset__title--emotions">Опишите свои эмоции:</h2>
           <div class="form-group">
             <textarea class="form-group__textarea" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-        </fieldset>
-        <button type="submit" class="form-group__send-button base-button">Отправить отзыв</button>
+        </section>
+        <button type="submit" class="feedback-form__send-button base-button">Отправить отзыв</button>
       </form>
     </main>
 
@@ -153,7 +167,6 @@
         <a class="social__link social__link--facebook" href="#"></a>
         <a class="social__link social__link--youtube" href="#"></a>
       </div>
-      <!--<span class="page-footer__copyright">Разработано</span>-->
       <a href="https://htmlacademy.ru/" class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
         <svg class="page-footer__copyright-icon" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">

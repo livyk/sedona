@@ -1,0 +1,32 @@
+@import "../variables";
+
+.feedback-page__header {
+  padding: 39px 0 17px 0;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.feedback-page__title {
+  font-size: 18px;
+}
+
+.feedback-page__description {
+  max-width: 280px;
+  margin: 28px auto 0 auto;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+@media (min-width: $tablet-screen) {
+  .feedback-page__header {
+    padding-top: 67px;
+  }
+  .feedback-page__title {
+    font-size: 30px;
+  }
+  .feedback-page__description {
+    margin-top: 25px;
+    max-width: 445px;
+  }
+}

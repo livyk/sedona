@@ -38,6 +38,14 @@
   .intro__text-sedona {
     max-width: 463px;
   }
+
+  .intro--mini {
+    height: 160px;
+    .intro__text-sedona {
+      max-width: 460px;
+      margin-top: -7px;
+    }
+  }
 }
 
 @media (min-width: $desktop-screen) {
