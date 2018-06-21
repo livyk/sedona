@@ -1,8 +1,11 @@
+@import "../variables";
+
 .page-footer {
-  padding: 35px 0;
+  padding: 31px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 
 .page-footer__hashtag {
@@ -16,19 +19,47 @@
 }
 
 .page-footer__copyright {
-  margin-top: 28px;
-  margin-left: -12px;
+  position: relative;
+  min-width: 130px;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
   color: black;
   text-transform: uppercase;
   font-size: 14px;
 }
 
+
 .page-footer__copyright-icon{
-  position: relative;
-  top: 14px;
-  right: -10px;
+  margin-left: 14px;
 }
 
 .page-footer__social {
   margin-top: 37px;
+}
+
+@media (min-width: $tablet-screen) {
+  .page-footer {
+    max-width: $tablet-screen;
+    margin: 0 auto;
+    padding: 0;
+    height: 112px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .page-footer__social {
+    margin: 0;
+  }
+  .page-footer__copyright {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .page-footer {
+    max-width: $desktop-screen;
+  }
+
 }

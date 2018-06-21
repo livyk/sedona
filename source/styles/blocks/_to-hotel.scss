@@ -1,16 +1,19 @@
 @import "../variables";
 
 .to-hotel {
-  padding: 0 20px 50px 20px;
+  padding-bottom: 50px;
   background-color: white;
 }
 
 .to-hotel__hotel-search-link {
+  max-width: 280px;
   margin: 35px auto 0 auto;
 }
 
 @media (min-width: $tablet-screen) {
   .to-hotel {
+    max-width: $tablet-screen;
+    margin: 0 auto;
     padding-bottom: 58px;
   }
   .to-hotel__hotel-search-link {
@@ -22,6 +25,7 @@
 @media (min-width: $desktop-screen) {
   .to-hotel {
     padding-bottom: 67px;
+    max-width: $desktop-screen;
   }
   .to-hotel__hotel-search-link {
     margin-top: 40px;
