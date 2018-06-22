@@ -221,10 +221,26 @@
     border: $input-background-color solid 4px;
   }
 }
-//
-//@media (min-width: $tablet-screen) {
-//  .form-group--checkbox {
-//    width: 40%;
-//    box-sizing: border-box;
-//  }
-//}
+
+@media (min-width: $tablet-screen) {
+  .form-group--radio {
+    margin-bottom: 22px;
+  }
+
+  .form-group--column {
+    margin-bottom: 24px;
+    .form-group__label {
+      padding-left: 22px;
+    }
+  }
+
+  .form-group--checkbox {
+    margin-bottom: 32px;
+  }
+
+  .form-group__textarea {
+    & {
+      padding-left: 22px;
+    }
+  }
+}

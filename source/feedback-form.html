@@ -78,8 +78,8 @@
           </div>
         </section>
 
-        <section class="fieldset feedback-form__contacts">
-          <h2 class="fieldset__title">Контактная информация:</h2>
+        <section class="fieldset fieldset--fluid feedback-form__contacts">
+          <h2 class="fieldset__title fieldset__title--contacts">Контактная информация:</h2>
           <div class="fieldset__fields">
             <div class="form-group form-group--column">
               <label for="phone" class="form-group__label">Контактный телефон*</label>
@@ -121,10 +121,12 @@
           </div>
         </section>
 
-        <section class="fieldset feedback-form__attractions">
-          <h2 class="fieldset__title fieldset__title--attractions">Посещенные достопримечательности:</h2>
+        <section class="fieldset fieldset--fluid feedback-form__attractions">
+          <h2 class="fieldset__title fieldset__title--attractions">
+            Посещенные <br class="break--tablet break--desktop"> достопримечательности:
+          </h2>
 
-          <div class="fieldset__fields">
+          <div class="fieldset__fields fieldset__fields--attractions">
             <div class="form-group form-group--checkbox">
               <input id="devil-bridge" checked type="checkbox" class="form-group__checkbox">
               <span class="form-group__checkbox-checkmark"></span>
@@ -150,13 +152,16 @@
             </div>
           </div>
         </section>
-        <section class="fieldset feedback-form__emotions">
+        <section class="fieldset fieldset--fluid feedback-form__emotions">
           <h2 class="fieldset__title fieldset__title--emotions">Опишите свои эмоции:</h2>
           <div class="form-group">
             <textarea class="form-group__textarea" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </section>
-        <button type="submit" class="feedback-form__send-button base-button">Отправить отзыв</button>
+        <div class="feedback-form__submit-row">
+          <button type="submit" class="feedback-form__send-button base-button">Отправить отзыв</button>
+          <span class="feedback-form__legend">* — обязательные поля</span>
+        </div>
       </form>
     </main>
 
