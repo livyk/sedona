@@ -1,12 +1,15 @@
 @import "../variables";
 
 .advantage-card {
-  position: relative;
-  padding: 39px 0 40px;
-  background-color: $control-background-color;
+  padding: 40px 0;
+  flex-shrink: 0;
   color: white;
   text-align: center;
-  flex-shrink: 0;
+  background-color: $control-background-color;
+}
+
+.advantage-card--with-triangle {
+  padding-top: 0;
 }
 
 .advantage-card__text-divider {
@@ -25,25 +28,17 @@
 }
 
 .advantage-card__description {
-  width: 268px;
-  margin: 0 auto;
+  padding: 0 20px;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px;
 }
 
 .advantage-card__triangle {
+  position: relative;
   top: -1px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  margin-bottom: 36px;
   width: 100vw;
-  height: auto;
-}
-
-.advantage-card--with-triangle {
-  padding-top: 77px;
 }
 
 .advantage-card--gray {
