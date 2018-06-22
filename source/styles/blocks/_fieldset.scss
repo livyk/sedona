@@ -44,6 +44,16 @@
   .fieldset--fluid {
     .fieldset__title {
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:before, &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 125px;
+        background-color: #dbdbdb;
+      }
     }
   }
 
@@ -68,5 +78,39 @@
 
   .fieldset__title--emotions {
     margin-bottom: 57px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .fieldset__title--impressions {
+    margin-left: 80px;
+  }
+  .fieldset__title--contacts {
+    margin-bottom: 74px;
+  }
+  .fieldset__fields--contacts {
+    display: flex;
+    & > * {
+      box-sizing: border-box;
+      width: 50%;
+    }
+  }
+  .fieldset__fields--attractions {
+    justify-content: space-between;
+    & > *:nth-child(odd), & > *:nth-child(even) {
+      padding-left: 0;
+      width: auto;
+    }
+  }
+  .fieldset__title--emotions {
+    margin-bottom: 58px;
+  }
+
+  .fieldset--fluid {
+    .fieldset__title {
+      &:before, &:after {
+        width: 280px;
+      }
+    }
   }
 }

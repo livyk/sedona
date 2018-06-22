@@ -244,3 +244,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-screen) {
+  .form-group--column {
+    flex-direction: row;
+    align-items: center;
+    //margin-right: 80px;
+    .form-group__label {
+      padding: 0;
+      margin-right: 20px;
+    }
+  }
+  .form-group__input-with-icon {
+    width: 315px;
+  }
+}

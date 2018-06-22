@@ -60,6 +60,10 @@
 @media (min-width: $desktop-screen) {
   .page-footer {
     max-width: $desktop-screen;
+    box-sizing: border-box;
   }
-
+  .page-footer--feedback {
+    padding: 0 120px;
+    justify-content: space-between;
+  }
 }

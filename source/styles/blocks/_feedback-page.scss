@@ -30,3 +30,14 @@
     max-width: 445px;
   }
 }
+
+@media (min-width: $desktop-screen) {
+  .feedback-page {
+    max-width: $desktop-screen;
+    margin: 0 auto;
+  }
+  .feedback-page__header {
+    padding-top: 104px;
+  }
+
+}
