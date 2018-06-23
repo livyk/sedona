@@ -10,6 +10,7 @@ button {
   border: none;
   font-family: 'PT Sans', 'Arial', sans-serif;
   padding: 0;
+  cursor: pointer;
 }
 
 a {
@@ -22,7 +23,6 @@ a {
 
 input, textarea {
   border: none;
-  outline: none;
   padding: 0;
   margin: 0;
 }
