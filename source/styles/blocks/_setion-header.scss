@@ -31,6 +31,14 @@
   }
 }
 
+.section-header--galery {
+  .section-header__title {
+    font-size: 18px;
+  }
+  .section-header__description {
+    margin-top: 27px;
+  }
+}
 
 @media (min-width: $tablet-screen) {
   .section-header {

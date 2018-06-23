@@ -14,7 +14,7 @@
 
 .video__timeline {
   background-color: rgba(black, 0.6);
-  padding: 21px;
+  padding: 22px 21px 20px 21px;
   position: relative;
   &:before {
     content: '';
@@ -30,7 +30,7 @@
     border-radius: 50%;
     background-color: white;
     top: 50%;
-    left: 40px;
+    left: 58px;
     transform: translate(0,-50%);
   }
 }
@@ -41,7 +41,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 .video__control {

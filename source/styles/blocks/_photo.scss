@@ -1,12 +1,35 @@
 @import "../variables";
 
+.photo {
+  border-top: #e5e5e5 1px solid;
+  padding: 22px 20px 18px 20px;
+}
+
+.photo__image {
+  margin-bottom: 14px;
+}
 .photo__title {
+  display: block;
+  margin-bottom: 6px;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .photo__author {
+  margin-bottom: 10px;
+  display: block;
   font-size: 14px;
   color: $secondary-text-color;
+}
+
+.photo__like-button {
+  margin-right: 15px;
+}
+
+.photo__likes {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
 }

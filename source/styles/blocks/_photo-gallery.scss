@@ -1,0 +1,11 @@
+.photo-gallery {
+  padding-top: 39px;
+  background-color: white;
+}
+
+.photo-gallery__photos{
+  margin-top: 26px;
+  &:last-child {
+    border-bottom: #e5e5e5 1px solid;
+  }
+}
