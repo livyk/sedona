@@ -36,6 +36,7 @@ gulp.task("sprite", function () {
   .pipe(imagemin([imagemin.svgo({
     plugins: [
       { removeViewBox: false },
+      { removeAttrs: { attrs: '(fill|stroke)' } },
     ]
   })]))
   .pipe(svgstore({
