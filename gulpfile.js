@@ -33,7 +33,7 @@ gulp.task('styles', function () {
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
-  .pipe(imagemin([imagemin.svgo()]))
+  .pipe(imagemin([imagemin.svgo({ removeViewBox: false })]))
   .pipe(svgstore({
     inlineSvg: true
   }))
