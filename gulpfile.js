@@ -31,8 +31,8 @@ gulp.task('styles', function () {
     .pipe(rename('style.min.css'))
 });
 
-gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
+gulp.task("sprite-svg", function () {
+  return gulp.src("source/img/sprite-svg/*.svg")
   .pipe(imagemin([imagemin.svgo({
     plugins: [
       { removeViewBox: false },
@@ -47,17 +47,23 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("images", function() {
-  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/**/icon-*.svg"])
+  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/sprite-svg/*"])
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
-    imagemin.jpegtran({progressive: true})
+    imagemin.jpegtran({progressive: true}),
+    imagemin.svgo({
+      plugins: [
+        { removeViewBox: false },
+      ]
+    })
   ]))
   .pipe(gulp.dest("build/img"));
 });
 
-gulp.task('webp', function () {
-  return gulp.src("source/img/**/*.{png, jpg}")
-  .pipe(webp({ quality: 90 }))
+gulp.task("webp", function() {
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task('js', function () {
@@ -75,9 +81,9 @@ gulp.task('copy', function () {
 
 gulp.task('watch', function () {
   gulp.watch("source/styles/**/*.scss", gulp.series('styles'));
-  gulp.watch(["source/img/**/*.{png,jpg,svg}", "!source/img/**/icon-*.svg"], gulp.series('images'));
+  gulp.watch(["source/img/**/*.{png,jpg,svg}", "!source/img/sprite-svg/*"], gulp.series('images'));
   gulp.watch("source/img/**/*.{png, jpg}", gulp.series('webp'));
-  gulp.watch("source/img/icon-*.svg", gulp.series('sprite'));
+  gulp.watch("source/img/sprite-svg/*.svg", gulp.series('sprite-svg'));
   gulp.watch("source/js/*.js", gulp.series('js'));
   gulp.watch(["source/fonts/**/*.{woff, woff2}", "source/*.html"], gulp.series('copy'))
 });
@@ -91,5 +97,5 @@ gulp.task("connect", function () {
   browserSync.watch('build/**/*').on('change', browserSync.reload);
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("styles", "webp", "images", "js", "sprite", "copy")));
-gulp.task("serve", gulp.series("build", gulp.parallel("connect", "watch")));
+gulp.task("build", gulp.series("clean", gulp.parallel("styles", "webp", "images", "js", "sprite-svg", "copy")));
+gulp.task("serve", gulp.parallel("connect", "watch"));

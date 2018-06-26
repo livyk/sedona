@@ -63,11 +63,19 @@
       </header>
       <div class="photo-gallery__photos">
         <figure class="photo">
-          <picture class="photo__image">
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
-            <source media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg">
-            <img src="img/photo-sunset-mobile@1x.jpg" alt="Неродные просторы">
+          <picture >
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="/img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="/img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+                    srcset="/img/photo-sunset-mobile@1x.webp 1x, /img/photo-sunset-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+                    srcset="/img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="/img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+            <img class="photo__image" src="/img/photo-sunset-mobile@1x.jpg"
+                 srcset="/img/photo-sunset-mobile@1x.jpg 1x, /img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
           </picture>
           <figcaption class="photo__legend">
             <b class="photo__title">Неродные просторы</b>
@@ -83,18 +91,26 @@
           </figcaption>
         </figure>
         <figure class="photo">
-          <picture class="photo__image">
-            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
-            <source media="(max-width: 767px)" srcset="img/photo-cactus-mobile@1x.jpg">
-            <img src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="/img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="/img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+                    srcset="/img/photo-cactus-mobile@1x.webp 1x, /img/photo-cactus-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+                    srcset="/img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="/img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+            <img class="photo__image" src="/img/photo-cactus-mobile@1x.jpg"
+                 srcset="/img/photo-cactus-mobile@1x.jpg 1x, /img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
           </picture>
           <figcaption class="photo__legend">
             <b class="photo__title">Местная растительность</b>
             <small class="photo__author">Автор фото: Сергей</small>
             <div class="photo__likes">
               <button class="photo__like-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20">
+                <svg width="22" height="20">
                   <use xlink:href="/img/sprite.svg#icon-like"></use>
                 </svg>
               </button>
@@ -104,10 +120,18 @@
         </figure>
         <figure class="photo">
           <picture class="photo__image">
-            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
-            <source media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg">
-            <img src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="/img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="/img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+                    srcset="/img/photo-roads-mobile@1x.webp 1x, /img/photo-roads-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+                    srcset="/img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="/img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+            <img class="photo__image" src="/img/photo-roads-mobile@1x.jpg"
+                 srcset="/img/photo-roads-mobile@1x.jpg 1x, /img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
           </picture>
           <figcaption class="photo__legend">
             <b class="photo__title">Дорога на север</b>
@@ -124,10 +148,18 @@
         </figure>
         <figure class="photo">
           <picture class="photo__image">
-            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
-            <source media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg">
-            <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="/img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="/img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 767px)"
+                    srcset="/img/photo-bridge-mobile@1x.webp 1x, /img/photo-bridge-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+                    srcset="/img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="/img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+            <img class="photo__image" src="/img/photo-bridge-mobile@1x.jpg"
+                 srcset="/img/photo-bridge-mobile@1x.jpg 1x, /img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
           </picture>
           <figcaption class="photo__legend">
             <b class="photo__title">Мост Дьявола</b>
@@ -155,10 +187,18 @@
 
       <div class="video video-gallery__video">
         <picture class="video__image">
-          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-          <source media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg">
-          <img src="img/video-mobile@1x.jpg" alt="video-fake" >
+          <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="/img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+                  srcset="/img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 767px)"
+                  srcset="/img/video-mobile@1x.webp 1x, /img/video-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)"
+                  srcset="/img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="/img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img src="img/video-mobile@1x.jpg"
+               srcset="/img/video-mobile@1x.jpg 1x, /img/video-mobile@2x.jpg 2x" alt="video-fake" >
         </picture>
         <div class="video__interface">
           <div class="video__timeline"></div>
