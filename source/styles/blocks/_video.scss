@@ -49,18 +49,12 @@
 }
 
 .video__control-icon {
-  path {
-    fill: #5c6870;
-  }
+  fill: #5c6870;
   &:hover {
-    path {
-      fill: #333333;
-    }
+    fill: #333333;
   }
   &:active {
-    path {
-      fill: #b8b8b8;
-    }
+    fill: #b8b8b8;
   }
 }
 
@@ -100,18 +94,12 @@
     transform: translate(-50%, -50%);
   }
   .video__control-icon {
-    path{
-      fill: white;
-    }
+    fill: white;
     &:hover {
-      path{
-        fill: rgba(white, 0.6);
-      }
+      fill: rgba(white, 0.6);
     }
     &:active {
-      path {
-        fill: rgba(white, 0.3);
-      }
+      fill: rgba(white, 0.3);
     }
   }
 }

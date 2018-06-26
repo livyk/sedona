@@ -29,6 +29,9 @@
 
 .photo__like-button {
   margin-right: 15px;
+  svg {
+    fill: rgba(black, 0.3)
+  }
 }
 
 .photo__likes {
@@ -77,5 +80,9 @@
   .photo__author {
     color: white;
   }
-
+  .photo__like-button {
+    svg {
+      fill: white;
+    }
+  }
 }
