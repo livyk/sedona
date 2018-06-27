@@ -84,11 +84,11 @@
       border: none;
       color: black;
       font-size: 14px;
+      cursor: pointer;
 
       &:hover {
         background-color: $menu-item-background-color;
         color: $menu-item-hover-color;
-        cursor: pointer;
       }
       &:active {
         background-color: $menu-item-down-background-color;
@@ -126,16 +126,14 @@
     }
   }
 
-  .main-nav__list-item--active {
+  .main-nav__list-item--active a {
     cursor: default;
-    a {
-      color: $menu-item-active-color;
-      &:hover {
-        color: $menu-item-active-hover-color;
-      }
-      &:active {
-        color: $menu-item-active-down-color;
-      }
+    color: $menu-item-active-color;
+    &:hover {
+      color: $menu-item-active-hover-color;
+    }
+    &:active {
+      color: $menu-item-active-down-color;
     }
   }
 }
