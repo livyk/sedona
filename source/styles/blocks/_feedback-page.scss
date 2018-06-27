@@ -3,6 +3,8 @@
 .feedback-page {
   background-color: white;
   padding-top: 40px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .feedback-page__header {
@@ -12,6 +14,7 @@
 @media (min-width: $tablet-screen) {
   .feedback-page {
     padding-top: 74px;
+    max-width: none;
   }
   .feedback-page__header {
     margin-bottom: 74px;

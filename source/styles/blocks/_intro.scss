@@ -10,11 +10,11 @@
   background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@1x.jpg");
   background-position: center bottom, center center;
   background-repeat: no-repeat;
-  background-size: contain, auto;
+  background-size: 320px, auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
     background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@2x.jpg");
-    background-size: contain, 768px auto;
+    background-size: 320px, 768px auto;
   }
 }
 

@@ -1,6 +1,11 @@
 @import "../variables";
 @import "../mixins";
 
+.video {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 .video__interface {
   position: relative;
   z-index: 2;
@@ -9,8 +14,8 @@
 }
 
 .video__image {
-  display: block;
   width: 100%;
+  height: auto;
 }
 
 .video__timeline {

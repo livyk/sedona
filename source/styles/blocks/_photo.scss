@@ -2,17 +2,18 @@
 @import "../mixins";
 
 .photo {
-  border-top: #e5e5e5 1px solid;
   padding: 22px 20px 18px 20px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 450px;
+  box-sizing: border-box;
+  border-top: #e5e5e5 1px solid;
 }
 
 .photo__image {
   display: block;
   margin-bottom: 19px;
-  & > img {
-    vertical-align: top;
-  }
+  width: 100%;
+  height: auto;
 }
 .photo__title {
   display: block;
@@ -48,6 +49,8 @@
   .photo {
     padding: 0;
     border: none;
+    max-width: none;
+    margin: 0;
   }
   .photo__image {
     margin: 0;

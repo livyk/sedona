@@ -36,7 +36,7 @@
   position: relative;
   top: -1px;
   margin-bottom: 39px;
-  width: 100vw;
+  width: 100%;
 }
 
 .advantage-card--gray {
@@ -44,6 +44,7 @@
   color: black;
   background-color: $input-background-color;
   .advantage-card__description {
+    margin: 0 auto;
     width: 250px;
   }
   border-top: 1px solid rgba(black, 0.1);
