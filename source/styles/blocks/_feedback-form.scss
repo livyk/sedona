@@ -2,8 +2,7 @@
 
 .feedback-form {
   background-color: white;
-  border-bottom: transparent 1px solid;
-  //запрещаем схлопывание снизу
+  padding-bottom: 37px;
 }
 
 .feedback-form__identity {
@@ -23,12 +22,12 @@
 }
 
 .feedback-form__emotions {
-  margin-bottom: 51px;
+  margin-bottom: 58px;
 }
 
 .feedback-form__send-button {
   max-width: 280px;
-  margin: 0 auto 41px auto;
+  margin: 0 auto;
 }
 
 .feedback-form__legend {
@@ -63,7 +62,7 @@
   }
 
   .feedback-form__attractions {
-    margin-bottom: 33px;
+    margin-bottom: 37px;
   }
 
   .feedback-form__emotions {
@@ -94,7 +93,7 @@
 
 @media (min-width: $desktop-screen) {
   .feedback-form {
-    padding: 43px 120px 69px 120px;
+    padding: 43px 120px 66px 120px;
   }
   .feedback-form__identity {
     padding-left: 80px;

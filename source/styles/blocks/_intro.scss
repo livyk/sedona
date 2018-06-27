@@ -36,12 +36,12 @@
   .intro {
     padding-top: 57px;
     padding-bottom: 71px;
-
+    height: 391px;
     background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/bg-back-tablet@1x.jpg");
-    background-size: contain, auto;
+    background-size: auto, auto;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
       background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/bg-back-tablet@2x.jpg");
-      background-size: contain, 768px auto;
+      background-size: auto, 768px auto;
     }
   }
 
@@ -62,8 +62,8 @@
   .intro {
     padding-top: 58px;
     padding-bottom: 72px;
-
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/bg-back-desktop@1x.jpg");
+    height: 390px;
+    background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/bg-back-desktop@1x.jpg");
     background-size: contain, auto;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
       background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/bg-back-desktop@2x.jpg");

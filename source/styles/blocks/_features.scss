@@ -1,7 +1,7 @@
 @import "../variables";
 .features {
   padding-top: 35px;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
   background-color: white;
 }
 
@@ -25,6 +25,7 @@
 @media (min-width: $desktop-screen) {
   .features {
     max-width: $desktop-screen;
-
+    padding-bottom: 8px;
   }
+
 }

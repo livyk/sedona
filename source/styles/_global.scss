@@ -14,7 +14,9 @@
 
 body {
   font-family: 'PT Sans', 'Arial', sans-serif;
-  background-color: $input-background-color;
+  @media (min-width: $desktop-screen) {
+    background-color: $input-background-color;
+  }
 }
 
 .visually-hidden {
