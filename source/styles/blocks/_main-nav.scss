@@ -1,16 +1,18 @@
 @import "../variables";
+@import "../mixins";
 
 .main-nav__list {
   display: flex;
   flex-direction: column;
+  @include reset-list;
 }
 
 .main-nav__list-item {
   position: relative;
   & a {
     display: block;
-    padding-top: 16px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 17px;
 
     color: white;
     text-align: center;
@@ -18,6 +20,7 @@
     font-weight: bold;
     text-transform: uppercase;
     line-height: 24px;
+    text-decoration: none;
 
     background-color: $control-background-color;
     border-bottom: solid #678fa8 1px;
@@ -41,6 +44,8 @@
   position: absolute;
   top: 17px;
   right: 20px;
+  @include reset-button;
+  fill: white;
 }
 
 .main-nav__bar {
@@ -59,6 +64,7 @@
   position: absolute;
   top: 16px;
   right: 20px;
+  @include reset-button;
 }
 
 .main-nav--closed {

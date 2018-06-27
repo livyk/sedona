@@ -13,6 +13,7 @@
 }
 
 .advantage-card__title {
+  margin-top: 0;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -25,6 +26,7 @@
 
 .advantage-card__description {
   padding: 0 20px;
+  margin: 0;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px;
@@ -33,12 +35,12 @@
 .advantage-card__triangle {
   position: relative;
   top: -1px;
-  margin-bottom: 36px;
+  margin-bottom: 39px;
   width: 100vw;
 }
 
 .advantage-card--gray {
-  padding: 28px 20px 27px 20px;
+  padding: 30px 20px 27px 20px;
   color: black;
   background-color: $input-background-color;
   .advantage-card__description {
@@ -58,7 +60,7 @@
 
   .advantage-card {
     width: 256px;
-    padding: 45px 0;
+    padding: 46px 0;
   }
   .advantage-card__title {
     width: 165px;
@@ -79,6 +81,7 @@
   }
 
   .advantage-card--gray {
+    border: none;
     padding-bottom: 44px;
     .advantage-card__title {
       width: 150px;
@@ -86,14 +89,18 @@
     .advantage-card__description {
       width: 170px;
     }
+    .advantage-card__number {
+      margin-bottom: 24px;
+    }
   }
 }
 
 @media (min-width: $desktop-screen) {
   .advantage-card {
     width: 400px;
+    min-height: 256px;
+    box-sizing: border-box;
     padding-top: 53px;
-    padding-bottom: 58px;
   }
   .advantage-card__description {
     width: 265px;

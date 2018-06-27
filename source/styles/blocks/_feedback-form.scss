@@ -22,7 +22,7 @@
 }
 
 .feedback-form__emotions {
-  margin-bottom: 58px;
+  margin-bottom: 51px;
 }
 
 .feedback-form__send-button {
@@ -38,13 +38,13 @@
   .feedback-form {
     display: flex;
     flex-wrap: wrap;
-    padding: 56px 59px 63px 59px;
+    padding: 0 59px;
   }
 
   .feedback-form__impressions, .feedback-form__identity {
     box-sizing: border-box;
     width: 50%;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
   }
 
   .feedback-form__contacts, .feedback-form__emotions, .feedback-form__attractions {
@@ -62,7 +62,7 @@
   }
 
   .feedback-form__attractions {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   .feedback-form__emotions {

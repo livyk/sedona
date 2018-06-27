@@ -6,38 +6,29 @@
   background-color: white;
 }
 
-
 .section-header__title {
-  font-size: 21px;
+  margin: 0 0 27px 0;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
 
 .section-header__description {
-  margin-top: 19px;
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   color: $secondary-text-color;
 }
 
-.section-header--index {
-  .section-header__title {
-    font-size: 18px;
-  }
-  .section-header__description {
-    margin-top: 27px;
-    line-height: 26px;
-  }
+.section-header__description--advantages {
+  line-height: 26px;
 }
 
-.section-header__title--galery {
-  font-size: 18px;
+.section-header__title--to-hotel {
+  font-size: 21px;
+  margin-bottom: 20px;
 }
-.section-header__description--galery {
-  margin-top: 27px;
-}
-
 
 @media (min-width: $tablet-screen) {
   .section-header {
@@ -49,21 +40,19 @@
   .section-header__title {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 31px;
   }
-
-  .section-header__description {
-    margin-top: 31px;
-  }
-
-  .section-header--index {
-    .section-header__title {
-      font-size: 21px;
-    }
+  .section-header__title--advantages {
+    font-size: 21px;
+    margin-bottom: 29px;
   }
 }
 
 @media (min-width: $desktop-screen) {
   .section-header {
     max-width: $desktop-screen;
+  }
+  .section-header__title--advantages {
+    margin-bottom: 25px;
   }
 }

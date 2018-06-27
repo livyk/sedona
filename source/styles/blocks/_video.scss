@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../mixins";
 
 .video__interface {
   position: relative;
@@ -45,6 +46,7 @@
 }
 
 .video__control {
+  @include reset-button;
   flex-shrink: 0;
 }
 

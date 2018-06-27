@@ -30,13 +30,14 @@
 .form-group__input {
   display: block;
   margin-left: 14px;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
   width: 100%;
   box-sizing: border-box;
   font-family: 'PT Sans', 'Arial', sans-serif;
   line-height: 58px;
   font-size: 18px;
   font-weight: bold;
+  border: none;
   background-color: $input-background-color;
   &::placeholder {
     font-family: 'PT Sans', 'Arial', sans-serif;
@@ -198,6 +199,7 @@
   padding: 16px 20px;
   box-sizing: border-box;
 
+  border: none;
   background-color: $input-background-color;
   &, &::placeholder {
     font-family: 'PT Sans', 'Arial', sans-serif;

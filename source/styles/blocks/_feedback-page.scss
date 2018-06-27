@@ -1,26 +1,20 @@
 @import "../variables";
 
-.feedback-page__header {
-  padding: 39px 0 17px 0;
-  text-align: center;
-  text-transform: uppercase;
+.feedback-page {
   background-color: white;
+  padding-top: 40px;
 }
 
-.feedback-page__title {
-  font-size: 18px;
-}
-
-.feedback-page__description {
-  max-width: 280px;
-  margin: 28px auto 0 auto;
-  line-height: 24px;
-  font-size: 14px;
+.feedback-page__header {
+  margin-bottom: 15px;
 }
 
 @media (min-width: $tablet-screen) {
+  .feedback-page {
+    padding-top: 74px;
+  }
   .feedback-page__header {
-    padding-top: 67px;
+    margin-bottom: 74px;
   }
   .feedback-page__title {
     font-size: 30px;
@@ -29,15 +23,21 @@
     margin-top: 25px;
     max-width: 445px;
   }
+  .feedback-page__form {
+    padding-bottom: 60px;
+  }
 }
 
 @media (min-width: $desktop-screen) {
   .feedback-page {
+    padding-top: 111px;
     max-width: $desktop-screen;
     margin: 0 auto;
   }
   .feedback-page__header {
-    padding-top: 104px;
+    margin-bottom: 16px;
   }
-
+  .feedback-page__form {
+    padding-bottom: 66px;
+  }
 }

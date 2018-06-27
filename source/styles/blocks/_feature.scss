@@ -28,6 +28,7 @@
 }
 
 .feature__title {
+  margin: 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
@@ -35,8 +36,7 @@
 }
 
 .feature__description {
-  margin-top: 12px;
-  margin-left: 50px;
+  margin: 12px 0 0 50px;
   font-size: 14px;
   line-height: 21px;
   color: $secondary-text-color;
@@ -50,7 +50,7 @@
 @media (min-width: $tablet-screen) {
   .feature {
     width: 256px;
-    padding: 60px 0 54px 0;
+    padding: 60px 0 53px 0;
   }
   .feature__icon--house {
     height: 72px;

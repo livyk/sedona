@@ -1,5 +1,8 @@
 @import "../variables";
+@import "../mixins";
+
 .base-button {
+  @include reset-button;
   display: block;
   padding: 15px 0;
   width: 100%;
@@ -9,6 +12,7 @@
   font-weight: bold;
   line-height: 28px;
   text-transform: uppercase;
+  text-decoration: none;
 
   background-color: $control-background-color;
   color: $control-color;
