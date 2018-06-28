@@ -497,13 +497,13 @@ body {
   padding: 0 20px;
   height: 390px;
   background-color: #789ec2;
-  background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: center bottom, center 0px;
   background-repeat: no-repeat;
   background-size: 320px, cover; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .intro {
-      background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@2x.jpg");
+      background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
       background-size: 320px, 768px auto; } }
 
 .intro--mini {
@@ -522,11 +522,11 @@ body {
     padding-top: 55px;
     padding-bottom: 71px;
     height: 391px;
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-size: auto, auto; } }
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .intro {
-      background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
       background-size: auto, 768px auto; } }
 
 @media (min-width: 768px) {
@@ -543,11 +543,11 @@ body {
     padding-top: 58px;
     padding-bottom: 72px;
     height: 390px;
-    background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-size: contain, auto; } }
   @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
     .intro {
-      background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
       background-size: contain, 1200px auto; } }
 
 @media (min-width: 1200px) {
@@ -1366,7 +1366,7 @@ body {
     display: none;
     width: 100%;
     height: 100%;
-    background: url("/img/tick.svg") no-repeat center center; }
+    background: url("../img/tick.svg") no-repeat center center; }
 
 .form-group__checkbox-tick {
   display: none;
