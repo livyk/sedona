@@ -29,7 +29,23 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('build/css'))
     .pipe(minfy())
     .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css'))
 });
+
+gulp.task('minify-css', function () {
+  return gulp.src("source/styles/**/*.scss")
+  .pipe(plumber({errorHandler: notify.onError(function (err) {
+      return {
+        title: 'Styles',
+        message: err.message
+      }
+    })}))
+  .pipe(sass())
+  .pipe(postcss([autoprefixer()]))
+  .pipe(minfy())
+  .pipe(rename('style.min.css'))
+  .pipe(gulp.dest('build/css'))
+})
 
 gulp.task("sprite-svg", function () {
   return gulp.src("source/img/sprite-svg/*.svg")

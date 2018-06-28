@@ -7,10 +7,11 @@
   align-items: center;
   padding: 0 20px;
   height: 390px;
+  background-color: #789ec2;
   background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@1x.jpg");
-  background-position: center bottom, center center;
+  background-position: center bottom, center 0px;
   background-repeat: no-repeat;
-  background-size: 320px, auto;
+  background-size: 320px, cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
     background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@2x.jpg");
