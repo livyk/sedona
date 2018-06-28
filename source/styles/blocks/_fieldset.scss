@@ -1,0 +1,116 @@
+@import "../variables";
+
+.fieldset {
+  padding: 18px 20px 0 20px;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.fieldset__title {
+  margin: 0 0 21px 0;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.fieldset__title--impressions {
+  margin-bottom: 23px;
+}
+
+.fieldset__title--attractions {
+  margin-bottom: 17px;
+}
+
+.fieldset__title--emotions {
+  margin-bottom: 17px;
+}
+
+@media (min-width: $tablet-screen) {
+  .fieldset {
+    padding: 0;
+    border: none;
+  }
+
+  .fieldset__title {
+    font-size: 21px;
+    text-align: left;
+    margin-bottom: 59px;
+  }
+
+  .fieldset__title--contacts {
+    margin-bottom: 26px;
+  }
+
+  .fieldset--fluid {
+    .fieldset__title {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:before, &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 125px;
+        background-color: #dbdbdb;
+      }
+    }
+  }
+
+  .fieldset__title--attractions {
+    margin-bottom: 43px;
+  }
+
+  .fieldset__fields--attractions {
+    display: flex;
+    flex-wrap: wrap;
+    & > * {
+      width: 50%;
+      box-sizing: border-box;
+    }
+    & > *:nth-child(odd) {
+      padding-left: 96px;
+    }
+    & > *:nth-child(even) {
+      padding-left: 30px;
+    }
+  }
+
+  .fieldset__title--emotions {
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .fieldset__title--impressions {
+    margin-left: 80px;
+  }
+  .fieldset__title--contacts {
+    margin-bottom: 75px;
+  }
+  .fieldset__fields--contacts {
+    display: flex;
+    & > * {
+      box-sizing: border-box;
+      width: 50%;
+    }
+  }
+  .fieldset__fields--attractions {
+    justify-content: space-between;
+    & > *:nth-child(odd), & > *:nth-child(even) {
+      padding-left: 0;
+      width: auto;
+    }
+  }
+  .fieldset__title--emotions {
+    margin-bottom: 55px;
+  }
+
+  .fieldset--fluid {
+    .fieldset__title {
+      &:before, &:after {
+        width: 280px;
+      }
+    }
+  }
+}

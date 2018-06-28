@@ -1,0 +1,115 @@
+@import "../variables";
+
+.advantage-card {
+  padding: 40px 0;
+  flex-shrink: 0;
+  color: white;
+  text-align: center;
+  background-color: $control-background-color;
+}
+
+.advantage-card--with-triangle {
+  padding-top: 0;
+}
+
+.advantage-card__title {
+  margin-top: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.advantage-card__number {
+  display: block;
+  margin: 12px 0 17px 0;
+  font-size: 14px;
+}
+
+.advantage-card__description {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+
+.advantage-card__triangle {
+  position: relative;
+  top: -1px;
+  margin-bottom: 39px;
+  width: 100%;
+}
+
+.advantage-card--gray {
+  padding: 30px 20px 27px 20px;
+  color: black;
+  background-color: $input-background-color;
+  .advantage-card__description {
+    margin: 0 auto;
+    width: 250px;
+  }
+  border-top: 1px solid rgba(black, 0.1);
+}
+
+@media (min-width: $tablet-screen) {
+  .advantage-card--with-triangle {
+    padding-top: 37px;
+
+    .advantage-card__triangle {
+      display: none;
+    }
+  }
+
+  .advantage-card {
+    width: 256px;
+    padding: 46px 0;
+  }
+  .advantage-card__title {
+    width: 165px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .advantage-card__number {
+    margin: 11px 0 22px ;
+  }
+  .advantage-card__description {
+    width: 165px;
+    margin: 0 auto;
+  }
+
+  .advantage__secondary-items {
+    display: flex;
+  }
+
+  .advantage-card--gray {
+    border: none;
+    padding-bottom: 44px;
+    .advantage-card__title {
+      width: 150px;
+    }
+    .advantage-card__description {
+      width: 170px;
+    }
+    .advantage-card__number {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .advantage-card {
+    width: 400px;
+    min-height: 256px;
+    box-sizing: border-box;
+    padding-top: 53px;
+  }
+  .advantage-card__description {
+    width: 265px;
+  }
+  .advantage-card--gray {
+    padding-top: 46px;
+    padding-bottom: 64px;
+    .advantage-card__description {
+      width: 300px;
+    }
+  }
+}

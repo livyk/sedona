@@ -1,0 +1,23 @@
+@import "../variables";
+
+.map__frame {
+  vertical-align: top;
+  width: 100%;
+}
+
+@media (min-width: $tablet-screen) {
+  .map {
+    max-width: $tablet-screen;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .map {
+    max-width: $desktop-screen;
+  }
+  .map__frame {
+    width: $desktop-screen;
+    height: 350px;
+  }
+}

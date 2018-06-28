@@ -1,0 +1,35 @@
+@import "../variables";
+
+.video-gallery {
+  background-color: white;
+  padding-top: 33px;
+  padding-bottom: 40px;
+}
+
+.video-gallery__header {
+  margin-bottom: 34px;
+}
+
+@media (min-width: $tablet-screen) {
+  .video-gallery {
+    padding-top: 65px;
+  }
+  .video-gallery__video {
+    margin: 0 auto;
+  }
+  .video-gallery__header {
+    margin-bottom: 74px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .video-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 85px;
+  }
+  .video-gallery__header {
+    margin-bottom: 71px;
+  }
+}

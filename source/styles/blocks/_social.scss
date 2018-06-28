@@ -1,0 +1,31 @@
+@import "../variables";
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 151px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: $control-background-color;
+
+  &:hover, &:focus {
+    background-color: $control-hover-background-color;
+  }
+
+  &:active {
+    background-color: $control-down-background-color;
+    .social__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__icon {
+  fill: white;
+}

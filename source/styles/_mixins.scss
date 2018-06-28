@@ -1,0 +1,12 @@
+@mixin reset-button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,39 @@
+@import "../variables";
+
+.to-hotel {
+  padding-top: 27px;
+  padding-bottom: 50px;
+  background-color: white;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+
+.to-hotel__hotel-search-link {
+  max-width: 280px;
+  margin: 35px auto 0 auto;
+}
+
+@media (min-width: $tablet-screen) {
+  .to-hotel {
+    padding-top: 55px;
+    max-width: $tablet-screen;
+    margin: 0 auto;
+    padding-bottom: 58px;
+  }
+
+  .to-hotel__hotel-search-link {
+    margin: 42px auto 0 auto;
+    max-width: 458px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .to-hotel {
+    padding-bottom: 67px;
+    max-width: $desktop-screen;
+  }
+  .to-hotel__hotel-search-link {
+    margin-top: 47px;
+  }
+}

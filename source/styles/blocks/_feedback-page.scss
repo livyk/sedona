@@ -1,0 +1,47 @@
+@import "../variables";
+
+.feedback-page {
+  display: block;
+  background-color: white;
+  padding-top: 40px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.feedback-page__header {
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-screen) {
+  .feedback-page {
+    padding-top: 74px;
+    max-width: none;
+  }
+  .feedback-page__header {
+    margin-bottom: 74px;
+  }
+  .feedback-page__title {
+    font-size: 30px;
+  }
+  .feedback-page__description {
+    margin-top: 25px;
+    max-width: 445px;
+  }
+  .feedback-page__form {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .feedback-page {
+    padding-top: 111px;
+    max-width: $desktop-screen;
+    margin: 0 auto;
+  }
+  .feedback-page__header {
+    margin-bottom: 16px;
+  }
+  .feedback-page__form {
+    padding-bottom: 66px;
+  }
+}
