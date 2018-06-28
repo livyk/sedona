@@ -8,13 +8,13 @@
   padding: 0 20px;
   height: 390px;
   background-color: #789ec2;
-  background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-position: center bottom, center 0px;
   background-repeat: no-repeat;
   background-size: 320px, cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-    background-image: url("/img/bg-intro-triangle-mobile.svg"), url("/img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
     background-size: 320px, 768px auto;
   }
 }
@@ -38,10 +38,10 @@
     padding-top: 55px;
     padding-bottom: 71px;
     height: 391px;
-    background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-size: auto, auto;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-      background-image: url("/img/bg-intro-triangle-tablet.svg"), url("/img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
       background-size: auto, 768px auto;
     }
   }
@@ -64,10 +64,10 @@
     padding-top: 58px;
     padding-bottom: 72px;
     height: 390px;
-    background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-size: contain, auto;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-      background-image: url("/img/bg-intro-triangle-desktop.svg"), url("/img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
       background-size: contain, 1200px auto;
     }
   }
