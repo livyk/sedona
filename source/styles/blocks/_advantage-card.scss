@@ -13,19 +13,20 @@
 }
 
 .advantage-card__title {
-  margin-top: 0;
+  margin: 0;
   font-size: 18px;
   text-transform: uppercase;
 }
 
 .advantage-card__number {
   display: block;
-  margin: 12px 0 17px 0;
+  margin: 14px 0 18px 0;
   font-size: 14px;
 }
 
 .advantage-card__description {
   margin: 0;
+  padding: 0 20px;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px;

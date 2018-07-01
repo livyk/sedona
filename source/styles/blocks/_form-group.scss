@@ -125,6 +125,12 @@
       background-color: $radio-down-checkmark-color;
     }
   }
+
+  &:focus {
+    & + .form-group__radio-checkmark {
+      outline: auto;
+    }
+  }
 }
 
 .form-group__label--bold {
@@ -190,6 +196,12 @@
     }
     & + .form-group__checkbox-checkmark:before {
       opacity: 0.3;
+    }
+  }
+
+  &:focus {
+    & + .form-group__checkbox-checkmark {
+      outline: auto;
     }
   }
 }

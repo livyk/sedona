@@ -17,6 +17,7 @@
 }
 .photo__title {
   display: block;
+  margin-top: 0px;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: bold;
@@ -24,7 +25,7 @@
 }
 
 .photo__author {
-  margin-bottom: 12px;
+  margin: 0 0 12px 0;
   display: block;
   font-size: 14px;
   color: $secondary-text-color;

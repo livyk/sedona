@@ -1,0 +1,21 @@
+@import "../variables";
+
+.photo-and-video {
+  padding-top: 39px;
+  background-color: white;
+}
+
+@media (min-width: $tablet-screen) {
+  .photo-and-video {
+    max-width: 648px;
+    margin: 0 auto;
+    padding-top: 74px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .photo-and-video {
+    max-width: 1200px;
+    padding-top: 111px;
+  }
+}

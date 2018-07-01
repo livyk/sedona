@@ -1,11 +1,12 @@
 @import "../variables";
+@import "../mixins";
 
 .photo-gallery {
-  padding-top: 39px;
   background-color: white;
 }
 
 .photo-gallery__photos{
+  @include reset-list;
   margin-top: 26px;
   @media (max-width: $tablet-screen - 1) {
     &:last-child {
@@ -15,23 +16,16 @@
 }
 
 @media (min-width: $tablet-screen) {
-  .photo-gallery {
-    padding-top: 74px;
-  }
   .photo-gallery__photos {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 69px;
-    max-width: 648px;
-    margin: 0 auto;
+
   }
 }
 
 @media (min-width: $desktop-screen) {
   .photo-gallery {
-    max-width: 1200px;
     margin: 0 auto;
-    padding-top: 111px;
   }
   .photo-gallery__photos {
     padding-top: 71px;

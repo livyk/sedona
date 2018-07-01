@@ -1,6 +1,9 @@
 @import "../variables";
 @import "../mixins";
 
+.main-nav {
+  position: relative;
+}
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -42,6 +45,7 @@
 
 .main-nav__close-button {
   position: absolute;
+  z-index: 1;
   top: 17px;
   right: 20px;
   @include reset-button;
@@ -58,6 +62,10 @@
 .main-nav__logo {
   width: 102px;
   height: 84px;
+  & img {
+    min-width: 100%;
+    height: auto;
+  }
 }
 
 .main-nav__burger-button {
@@ -71,10 +79,16 @@
   & > .main-nav__list {
     display: none;
   }
+  & > .main-nav__close-button {
+    display: none;
+  }
 }
 
 
 @media (min-width: 768px) {
+  .main-nav__close-button {
+    display: none;
+  }
   .main-nav__list {
     flex-direction: row;
   }

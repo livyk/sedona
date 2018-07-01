@@ -1,5 +1,8 @@
 @import "../variables";
+@import "../mixins";
+
 .features {
+  @include reset-list;
   padding-top: 35px;
   padding-bottom: 7px;
   background-color: white;

@@ -14,6 +14,8 @@
 @media (min-width: $tablet-screen) {
   .advantage {
     flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
     justify-content: center;
     align-items: start;
   }
