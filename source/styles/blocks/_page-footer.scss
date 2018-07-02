@@ -32,8 +32,11 @@
   text-decoration: none;
 
   &:hover, &:focus {
+    transition: color 0.1s ease-in;
     color: #81b3d2;
+    outline: 0;
     .page-footer__copyright-icon {
+      transition: fill 0.1s ease-in;
       fill: #81b3d2;
     }
   }

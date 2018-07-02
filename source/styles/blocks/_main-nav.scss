@@ -34,7 +34,12 @@
     border-bottom: solid #678fa8 1px;
     border-top: solid #9ac2db 1px;
 
-    &:hover {
+    transition-property: background-color, color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+
+    &:hover, &:focus {
+      outline: 0;
       background-color: $control-hover-background-color;
     }
     &:active {
@@ -132,7 +137,10 @@
       font-size: 14px;
       cursor: pointer;
 
-      &:hover {
+      transition: color 0.1s ease-in;
+
+      &:hover, &:focus {
+        outline: 0;
         background-color: $menu-item-background-color;
         color: $menu-item-hover-color;
       }
