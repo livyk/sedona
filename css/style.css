@@ -339,12 +339,13 @@ body {
       display: inline; } }
 
 .page-header {
-  position: relative;
+  padding-top: 55px;
   margin: 0 auto;
   background-color: white; }
 
 @media (min-width: 768px) {
   .page-header {
+    padding-top: 0;
     max-width: 768px; } }
 
 @media (min-width: 1200px) {
@@ -352,7 +353,11 @@ body {
     max-width: 1200px; } }
 
 .main-nav {
-  position: relative; }
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: white; }
 
 .main-nav__list {
   display: -webkit-box;
@@ -429,13 +434,36 @@ body {
   background: none;
   border: none; }
 
-.main-nav--closed > .main-nav__list {
-  display: none; }
+@-webkit-keyframes menu-moving {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-231px);
+            transform: translateY(-231px); } }
 
-.main-nav--closed > .main-nav__close-button {
-  display: none; }
+@keyframes menu-moving {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-231px);
+            transform: translateY(-231px); } }
+
+@media (max-width: 767px) {
+  .main-nav--hidding {
+    -webkit-animation: menu-moving 0.2s ease-out;
+            animation: menu-moving 0.2s ease-out; }
+  .main-nav--showing {
+    animation: menu-moving 0.2s ease-out reverse; }
+  .main-nav--closed > .main-nav__list {
+    display: none; }
+  .main-nav--closed > .main-nav__close-button {
+    display: none; } }
 
 @media (min-width: 768px) {
+  .main-nav {
+    position: static; }
   .main-nav__close-button {
     display: none; }
   .main-nav__list {
@@ -858,7 +886,8 @@ body {
   text-decoration: none;
   background-color: #81b3d2;
   color: white; }
-  .base-button:hover {
+  .base-button:hover, .base-button:focus {
+    outline: 0;
     background-color: #669ec0;
     color: white; }
   .base-button:active {
@@ -1290,6 +1319,7 @@ body {
   .form-group__input:hover {
     background-color: #e5e5e5; }
   .form-group__input:focus {
+    outline: 0;
     padding-left: 16px;
     line-height: 50px;
     background-color: white;
@@ -1328,8 +1358,6 @@ body {
   margin-right: 22px;
   border-radius: 50%;
   background-color: #f2f2f2; }
-  .form-group__radio-checkmark:hover {
-    background-color: #e5e5e5; }
   .form-group__radio-checkmark:after {
     content: '';
     position: absolute;
@@ -1351,14 +1379,12 @@ body {
   z-index: 10; }
   .form-group__radio:checked + .form-group__radio-checkmark:after {
     display: block; }
-  .form-group__radio:hover + .form-group__label--radio:before {
+  .form-group__radio:hover + .form-group__radio-checkmark, .form-group__radio:focus + .form-group__radio-checkmark {
     background-color: #e5e5e5; }
-  .form-group__radio:active + .form-group__radio-checkmark:before {
+  .form-group__radio:active + .form-group__radio-checkmark {
     background-color: #d5d5d5; }
   .form-group__radio:active + .form-group__radio-checkmark:after {
     background-color: #a4a4a4; }
-  .form-group__radio:focus + .form-group__radio-checkmark {
-    outline: auto; }
 
 .form-group__label--bold {
   font-weight: bold;
@@ -1403,14 +1429,12 @@ body {
   z-index: 10; }
   .form-group__checkbox:checked + .form-group__checkbox-checkmark:before {
     display: block; }
-  .form-group__checkbox:hover + .form-group__checkbox-checkmark {
+  .form-group__checkbox:hover + .form-group__checkbox-checkmark, .form-group__checkbox:focus + .form-group__checkbox-checkmark {
     background-color: #e5e5e5; }
   .form-group__checkbox:active + .form-group__checkbox-checkmark {
     background-color: #d5d5d5; }
   .form-group__checkbox:active + .form-group__checkbox-checkmark:before {
     opacity: 0.3; }
-  .form-group__checkbox:focus + .form-group__checkbox-checkmark {
-    outline: auto; }
 
 .form-group__textarea {
   width: 100%;
@@ -1451,6 +1475,7 @@ body {
   .form-group__textarea:hover {
     background-color: #e5e5e5; }
   .form-group__textarea:focus {
+    outline: 0;
     padding: 12px 16px;
     background-color: white;
     border: #f2f2f2 solid 4px; }
