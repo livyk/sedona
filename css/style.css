@@ -386,8 +386,15 @@ body {
     text-decoration: none;
     background-color: #81b3d2;
     border-bottom: solid #678fa8 1px;
-    border-top: solid #9ac2db 1px; }
-    .main-nav__list-item a:hover {
+    border-top: solid #9ac2db 1px;
+    -webkit-transition-property: background-color, color;
+    transition-property: background-color, color;
+    -webkit-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in; }
+    .main-nav__list-item a:hover, .main-nav__list-item a:focus {
+      outline: 0;
       background-color: #669ec0; }
     .main-nav__list-item a:active {
       background-color: #669ec0;
@@ -481,8 +488,11 @@ body {
       border: none;
       color: black;
       font-size: 14px;
-      cursor: pointer; }
-      .main-nav__list-item a:hover {
+      cursor: pointer;
+      -webkit-transition: color 0.1s ease-in;
+      transition: color 0.1s ease-in; }
+      .main-nav__list-item a:hover, .main-nav__list-item a:focus {
+        outline: 0;
         background-color: white;
         color: #81b3d2; }
       .main-nav__list-item a:active {
@@ -885,7 +895,13 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #81b3d2;
-  color: white; }
+  color: white;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in; }
   .base-button:hover, .base-button:focus {
     outline: 0;
     background-color: #669ec0;
@@ -962,8 +978,13 @@ body {
   font-size: 14px;
   text-decoration: none; }
   .page-footer__copyright:hover, .page-footer__copyright:focus {
-    color: #81b3d2; }
+    -webkit-transition: color 0.1s ease-in;
+    transition: color 0.1s ease-in;
+    color: #81b3d2;
+    outline: 0; }
     .page-footer__copyright:hover .page-footer__copyright-icon, .page-footer__copyright:focus .page-footer__copyright-icon {
+      -webkit-transition: fill 0.1s ease-in;
+      transition: fill 0.1s ease-in;
       fill: #81b3d2; }
   .page-footer__copyright:active {
     color: rgba(0, 0, 0, 0.3); }
@@ -1030,12 +1051,17 @@ body {
           align-items: center;
   width: 46px;
   height: 48px;
-  background-color: #81b3d2; }
+  background-color: #81b3d2;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in; }
   .social__link:hover, .social__link:focus {
-    background-color: #669ec0; }
+    background-color: #669ec0;
+    outline: 0; }
   .social__link:active {
     background-color: #669ec0; }
     .social__link:active .social__icon {
+      -webkit-transition: opacity 0.1s ease-in;
+      transition: opacity 0.1s ease-in;
       opacity: 0.3; }
 
 .social__icon {
@@ -1295,7 +1321,13 @@ body {
   font-size: 18px;
   font-weight: bold;
   border: none;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in; }
   .form-group__input::-webkit-input-placeholder {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 18px;
@@ -1357,7 +1389,9 @@ body {
   height: 56px;
   margin-right: 22px;
   border-radius: 50%;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in; }
   .form-group__radio-checkmark:after {
     content: '';
     position: absolute;
@@ -1405,7 +1439,9 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 5px;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in; }
   .form-group__checkbox-checkmark:before {
     content: '';
     display: none;
@@ -1443,7 +1479,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in; }
   .form-group__textarea, .form-group__textarea::-webkit-input-placeholder {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 18px;
