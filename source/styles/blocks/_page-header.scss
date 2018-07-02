@@ -2,14 +2,14 @@
 
 
 .page-header {
-  position: relative;
-  //max-width: 320px;
+  padding-top: 55px;
   margin: 0 auto;
   background-color: white;
 }
 
 @media (min-width: $tablet-screen) {
   .page-header {
+    padding-top: 0;
     max-width: 768px;
   }
 }
