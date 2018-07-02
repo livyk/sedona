@@ -76,6 +76,11 @@ gulp.task("images", function() {
   .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("favicon", function() {
+  return gulp.src("source/favicon/*")
+  .pipe(gulp.dest("build"));
+});
+
 gulp.task("webp", function() {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
@@ -90,7 +95,8 @@ gulp.task('js', function () {
 gulp.task('copy', function () {
   return gulp.src([
     "source/fonts/*.{woff,woff2}",
-    "source/*.html"
+    "source/*.html",
+    "source/favicon/*"
   ], { base: 'source' })
   .pipe(gulp.dest("build"));
 });
@@ -113,5 +119,5 @@ gulp.task("connect", function () {
   browserSync.watch('build/**/*').on('change', browserSync.reload);
 });
 
-gulp.task("build", gulp.series("clean", gulp.parallel("styles", "webp", "images", "js", "sprite-svg", "copy")));
+gulp.task("build", gulp.series("clean", gulp.parallel("styles", "webp", "images", "js", "sprite-svg", "copy", "favicon")));
 gulp.task("serve", gulp.parallel("connect", "watch"));
