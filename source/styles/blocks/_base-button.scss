@@ -17,7 +17,8 @@
   background-color: $control-background-color;
   color: $control-color;
 
-  &:hover {
+  &:hover, &:focus {
+    outline: 0;
     background-color: $control-hover-background-color;
     color: $control-hover-color;
   }

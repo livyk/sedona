@@ -49,6 +49,7 @@
     background-color: $input-hover-background-color;
   }
   &:focus {
+    outline: 0;
     padding-left: 16px;
     line-height: 50px;
     background-color: white;
@@ -81,10 +82,6 @@
   border-radius: 50%;
   background-color: $radio-background-color;
 
-  &:hover {
-    background-color: $radio-hover-background-color;
-  }
-
   &:after {
     content: '';
     position: absolute;
@@ -111,24 +108,18 @@
     }
   }
 
-  &:hover {
-    & + .form-group__label--radio:before {
+  &:hover, &:focus {
+    & + .form-group__radio-checkmark {
       background-color: $radio-hover-background-color;
     }
   }
 
   &:active {
-    & + .form-group__radio-checkmark:before {
+    & + .form-group__radio-checkmark {
       background-color: $radio-down-background-color
     }
     & + .form-group__radio-checkmark:after {
       background-color: $radio-down-checkmark-color;
-    }
-  }
-
-  &:focus {
-    & + .form-group__radio-checkmark {
-      outline: auto;
     }
   }
 }
@@ -186,8 +177,10 @@
     display: block;
   }
 
-  &:hover + .form-group__checkbox-checkmark {
-    background-color: $checkbox-hover-background-color;
+  &:hover, &:focus {
+    & + .form-group__checkbox-checkmark {
+      background-color: $checkbox-hover-background-color;
+    }
   }
 
   &:active {
@@ -196,12 +189,6 @@
     }
     & + .form-group__checkbox-checkmark:before {
       opacity: 0.3;
-    }
-  }
-
-  &:focus {
-    & + .form-group__checkbox-checkmark {
-      outline: auto;
     }
   }
 }
@@ -226,6 +213,7 @@
     background-color: $input-hover-background-color;
   }
   &:focus {
+    outline: 0;
     padding: 12px 16px;
     background-color: white;
     border: $input-background-color solid 4px;
