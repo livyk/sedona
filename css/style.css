@@ -1789,7 +1789,8 @@ body {
 
 .map__frame {
   vertical-align: top;
-  width: 100%; }
+  width: 100%;
+  border: none; }
 
 @media (min-width: 768px) {
   .map {
