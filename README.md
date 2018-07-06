@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/av1at0r/sedona.svg?branch=master)](https://travis-ci.org/av1at0r/sedona)
 
+[Просмотреть](https://av1at0r.github.io/sedona/ "Перейти на страницу Sedona")
+
 #### 1. Адаптивная верстка
 * Макет адаптируется по трем брейкпоинтам (320px, 764px, 1280px).
 
